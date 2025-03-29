@@ -11,7 +11,7 @@ export default defineConfig({
     plugins: [
         react(),
         libInjectCss(),
-        dts({include: ['lib']})
+        dts({tsconfigPath: './tsconfig.app.json', include: ['lib']})
     ],
     build: {
         copyPublicDir: false,
