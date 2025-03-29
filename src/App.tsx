@@ -1,5 +1,4 @@
-import {Button} from '../lib/components/Button';
-
+import { Button } from '../'  //This works because your package.json points to the transpiled main file dist/main.ts.
 import './App.css'
 
 function App() {
