@@ -1,4 +1,4 @@
-import { Button } from '../'  //This works because your package.json points to the transpiled main file dist/main.ts.
+import { Button } from '../'  //after npm build -> This works because your package.json points to the transpiled main file dist/main.ts.
 import './App.css'
 
 function App() {
