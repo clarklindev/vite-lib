@@ -1,7 +1,14 @@
 // lib/components/Button/index.tsx
-import styles from './styles.module.css'
+import styles from "./styles.module.css";
 
 export function Button(props: React.ButtonHTMLAttributes<HTMLButtonElement>) {
-  const { className, children, ...restProps } = props
-  return <button className={`${className} ${styles.button}`} {...restProps}>{children}</button>
+    const { className, children, ...restProps } = props;
+    return (
+        <button
+            className={`text-red-400 ${className} ${styles.button}`}
+            {...restProps}
+        >
+            {children}
+        </button>
+    );
 }
