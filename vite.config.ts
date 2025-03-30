@@ -12,7 +12,7 @@ export default defineConfig({
         react(),
         tailwindcss(),
         libInjectCss(),
-        dts({ tsconfigPath: "./tsconfig.app.json", include: ["lib"] }),
+        dts({ include: ["lib"] }),
     ],
     build: {
         copyPublicDir: false,
@@ -21,7 +21,8 @@ export default defineConfig({
             formats: ["es"],
         },
         rollupOptions: {
-            external: ["react", "react/jsx-runtime"],
+            // external: ["react", "react/jsx-runtime"], //you can externalize this dependencies to remove the code from bundle
+            external: ["react"],
             input: Object.fromEntries(
                 glob
                     .sync("lib/**/*.{ts,tsx}", {
