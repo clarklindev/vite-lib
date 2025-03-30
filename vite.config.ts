@@ -12,7 +12,11 @@ export default defineConfig({
         react(),
         tailwindcss(),
         libInjectCss(),
-        dts({ include: ["lib"] }),
+        dts({
+            tsconfigPath: "./tsconfig.app.json",
+            include: ["lib"],
+            outDir: "dist/types",
+        }),
     ],
     build: {
         copyPublicDir: false,
