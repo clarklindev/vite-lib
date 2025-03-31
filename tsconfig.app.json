@@ -1,33 +1,33 @@
 {
-  "compilerOptions": {
-    "composite": true,
-    "declaration": true,
-    "declarationDir": "./dist/lib",  // Specify where to output .d.ts files
-    "typeRoots": ["node_modules/@types", "src/types"],
-    "outDir": "./dist",  // The output directory for compiled JavaScript files
-    "esModuleInterop": true,
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
+    "compilerOptions": {
+        "composite": true,
+        "declaration": true,
+        "declarationDir": "./dist", // Specify where to output .d.ts files
+        "typeRoots": ["node_modules/@types", "src/types"],
+        "outDir": "./dist", // The output directory for compiled JavaScript files
+        "esModuleInterop": true,
+        "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+        "target": "ES2020",
+        "useDefineForClassFields": true,
+        "lib": ["ES2020", "DOM", "DOM.Iterable"],
+        "module": "ESNext",
+        "skipLibCheck": true,
 
-    /* Bundler mode */
-    "moduleResolution": "node", //If you are just compiling TypeScript without bundling or using a bundler like Vite, consider using node as the moduleResolution strategy.
-    "allowImportingTsExtensions": false, //"allowImportingTsExtensions" option in TypeScript allows you to import TypeScript files (.ts and .tsx) directly from other TypeScript files, even if they have the .ts or .tsx extension included in the import path. 
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "noEmit": false,
-    "jsx": "react-jsx",
+        /* Bundler mode */
+        "moduleResolution": "node", //If you are just compiling TypeScript without bundling or using a bundler like Vite, consider using node as the moduleResolution strategy.
+        "allowImportingTsExtensions": false, //"allowImportingTsExtensions" option in TypeScript allows you to import TypeScript files (.ts and .tsx) directly from other TypeScript files, even if they have the .ts or .tsx extension included in the import path.
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "moduleDetection": "force",
+        "noEmit": false,
+        "jsx": "react-jsx",
 
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": false
-  },
-  "include": ["src/**/*", "src/types/**/*", "lib/**/*" ]
+        /* Linting */
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": false
+    },
+    "include": ["src/**/*", "src/types/**/*", "lib/**/*"]
 }

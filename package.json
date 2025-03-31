@@ -1,53 +1,75 @@
 {
-  "name": "@fightclub/libtest",
-  "private": false,
-  "version": "0.0.8",
-  "type": "module",
-  "main": "dist/main.js",
-  "types": "dist/types/lib/main.d.ts",
-  "files": [
-    "dist"
-  ],
-  "sideEffects": [
-    "**/*.css"
-  ],
-  "publishConfig": {
-    "access": "public"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc -b ./tsconfig.lib.json && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "prepublishOnly": "npm run build"
-  },
-  "peerDependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.21.0",
-    "@types/node": "^22.13.14",
-    "@types/react": "^19.0.10",
-    "@types/react-dom": "^19.0.4",
-    "@vitejs/plugin-react": "^4.3.4",
-    "eslint": "^9.21.0",
-    "eslint-plugin-react-hooks": "^5.1.0",
-    "eslint-plugin-react-refresh": "^0.4.19",
-    "glob": "^11.0.1",
-    "globals": "^15.15.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "typescript": "~5.7.2",
-    "typescript-eslint": "^8.24.1",
-    "vite": "^6.2.0",
-    "vite-plugin-dts": "^4.5.3",
-    "vite-plugin-lib-inject-css": "^2.2.1"
-  },
-  "dependencies": {
-    "@tailwindcss/vite": "^4.0.17",
-    "clsx": "^2.1.1",
-    "tailwind-merge": "^3.0.2",
-    "tailwindcss": "^4.0.17"
-  }
+    "name": "@fightclub/libtest",
+    "private": false,
+    "version": "0.0.8",
+    "type": "module",
+    "main": "dist/main.js",
+    "module": "dist/main.js",
+    "types": "dist/types/lib/main.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/types/lib/main.d.ts",
+            "import": "./dist/main.js",
+            "require": "./dist/main.js"
+        },
+        "./styles.css": "./dist/assets/styles.css"
+    },
+    "files": [
+        "dist"
+    ],
+    "sideEffects": [
+        "**/*.css"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/clarklindev/vite-lib.git"
+    },
+    "keywords": [
+        "react",
+        "components",
+        "ui",
+        "tailwind",
+        "typescript"
+    ],
+    "license": "MIT",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc -b ./tsconfig.lib.json && vite build",
+        "lint": "eslint .",
+        "preview": "vite preview",
+        "prepublishOnly": "npm run build"
+    },
+    "peerDependencies": {
+        "react": "^19.1.0",
+        "react-dom": "^19.1.0",
+        "tailwindcss": "^4.0.0"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.21.0",
+        "@types/node": "^22.13.14",
+        "@types/react": "^19.0.10",
+        "@types/react-dom": "^19.0.4",
+        "@vitejs/plugin-react": "^4.3.4",
+        "eslint": "^9.21.0",
+        "eslint-plugin-react-hooks": "^5.1.0",
+        "eslint-plugin-react-refresh": "^0.4.19",
+        "glob": "^11.0.1",
+        "globals": "^15.15.0",
+        "react": "^19.1.0",
+        "react-dom": "^19.1.0",
+        "typescript": "~5.7.2",
+        "typescript-eslint": "^8.24.1",
+        "vite": "^6.2.0",
+        "vite-plugin-dts": "^4.5.3",
+        "vite-plugin-lib-inject-css": "^2.2.1"
+    },
+    "dependencies": {
+        "@tailwindcss/vite": "^4.0.17",
+        "clsx": "^2.1.1",
+        "tailwind-merge": "^3.0.2",
+        "tailwindcss": "^4.0.17"
+    }
 }
