@@ -1,11 +1,14 @@
 // lib/components/Button/index.tsx
-import styles from "./styles.module.css";
+import { cn } from "../../utils/cn"; // Assuming you have a cn utility
 
 export function Button(props: React.ButtonHTMLAttributes<HTMLButtonElement>) {
     const { className, children, ...restProps } = props;
     return (
         <button
-            className={`text-red-400 ${className} ${styles.button}`}
+            className={cn(
+                "text-red-400 hover:text-red-800", // base styles
+                className // allow overrides
+            )}
             {...restProps}
         >
             {children}
