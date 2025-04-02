@@ -4,6 +4,7 @@ import ButtonExample from './examples/Button';
 import IconExample from './examples/Icon';
 import AccordionExample from './examples/Accordion';
 import AvatarExample from './examples/Avatar';
+import BadgeExample from './examples/Badge';
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <IconExample />
             <AccordionExample />
             <AvatarExample />
+            <BadgeExample />
         </>
     );
 }
