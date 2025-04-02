@@ -12,7 +12,7 @@ import { libInjectCss } from 'vite-plugin-lib-inject-css';
 export default defineConfig({
     resolve: {
         alias: {
-            '@': path.resolve(__dirname, 'lib') // Alias for the 'src' directory
+            '@': path.resolve(__dirname, 'lib') // Alias for the 'lib' directory
         }
     },
     plugins: [
