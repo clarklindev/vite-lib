@@ -12,7 +12,6 @@
             "import": "./dist/main.js",
             "require": "./dist/main.js"
         },
-        "./styles.css": "./dist/assets/styles.css",
         "./icons": {
             "types": "./dist/types/lib/icons/index.d.ts",
             "import": "./dist/icons/index.js",
@@ -22,7 +21,8 @@
             "types": "./dist/types/lib/components/index.d.ts",
             "import": "./dist/components/index.js",
             "require": "./dist/components/index.js"
-        }
+        },
+        "./styles.css": "./dist/assets/styles.css"
     },
     "files": [
         "dist"
