@@ -15,8 +15,8 @@
         "./styles.css": "./dist/assets/styles.css",
         "./icons": {
             "types": "./dist/types/lib/icons/index.d.ts",
-            "import": "./dist/icons.js",
-            "require": "./dist/icons.js"
+            "import": "./dist/icons/index.js",
+            "require": "./dist/icons/index.js"
         }
     },
     "files": [
