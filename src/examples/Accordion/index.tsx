@@ -37,7 +37,7 @@ type AccordionDataType = {
     body: React.ReactElement | string;
 };
 
-export const AccordionExample = () => {
+const AccordionExample = () => {
     const iconMap = {
         chevron: { open: <ChevronUpIcon />, closed: <ChevronDownIcon /> },
         plusminus: { open: <MinusIcon />, closed: <PlusIcon /> },
@@ -69,3 +69,5 @@ export const AccordionExample = () => {
         </Accordion>
     );
 };
+
+export default AccordionExample;
