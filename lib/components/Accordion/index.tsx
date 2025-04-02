@@ -1,4 +1,4 @@
-import { AccordionContextProvider, useAccordion } from '../../context/AccordionContext';
+import { AccordionContextProvider, useAccordion } from '@/context/AccordionContext';
 import React, { useRef, useEffect } from 'react';
 
 // whatever props are passed in, just pass through

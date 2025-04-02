@@ -1,4 +1,4 @@
-import { Button } from '../../../lib/components/Button';
+import { Button } from '@/components/Button';
 
 const ButtonExample = () => {
     return <Button className="text-blue-500">test</Button>;

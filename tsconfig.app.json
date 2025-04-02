@@ -27,7 +27,13 @@
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "noFallthroughCasesInSwitch": true,
-        "noImplicitAny": false
+        "noImplicitAny": false,
+
+        /* Path Aliases */
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["lib/*"]
+        }
     },
     "include": ["src/**/*", "src/types/**/*", "lib/**/*"]
 }

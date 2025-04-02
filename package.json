@@ -17,6 +17,11 @@
             "import": "./dist/icons/index.js",
             "require": "./dist/icons/index.js"
         },
+        "./components": {
+            "types": "./dist/types/lib/components/index.d.ts",
+            "import": "./dist/components/index.js",
+            "require": "./dist/components/index.js"
+        },
         "./styles.css": "./dist/assets/styles.css"
     },
     "files": [

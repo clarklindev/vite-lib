@@ -1,6 +1,6 @@
 // lib/components/Input/index.tsx
 import styles from './styles.module.css';
-import { cn } from '../../utils/cn';
+import { cn } from '@/utils/cn';
 
 export function Input(props: React.InputHTMLAttributes<HTMLInputElement>) {
     const { className, ...restProps } = props;

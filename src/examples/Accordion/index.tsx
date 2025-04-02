@@ -1,5 +1,5 @@
-import { Accordion } from '../../../lib/components/Accordion';
-import { Icon } from '../../../lib/components/Icon';
+import { Accordion } from '@/components/Accordion';
+import { Icon } from '@/components/Icon';
 import { ChevronDownIcon, ChevronUpIcon, MinusIcon, PlusIcon } from '../../../lib/icons';
 
 const data = [
