@@ -2,8 +2,6 @@ import React from 'react';
 import { cva } from 'class-variance-authority';
 import type { VariantProps } from 'class-variance-authority';
 
-import { twMerge } from 'tailwind-merge';
-
 //make children full width/height tailwind 3.1
 const icon = cva(
     [
