@@ -1,5 +1,6 @@
 import { Button, Card, Input } from '../lib/main'; //after npm build -> This works because your package.json points to the transpiled main file dist/main.ts.
 import './App.css';
+import IconExample from './examples/Icon';
 
 function App() {
     return (
@@ -9,6 +10,7 @@ function App() {
                 <Button>Hello</Button>
                 <Input />
             </Card>
+            <IconExample />
         </>
     );
 }
