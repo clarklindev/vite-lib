@@ -1,4 +1,4 @@
-import { Badge } from '../../../lib/components/Badge';
+import { Badge } from '@/components/Badge';
 
 const BadgeExample = () => {
     return <Badge intent="contained">Hello</Badge>;
