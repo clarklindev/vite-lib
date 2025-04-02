@@ -19,7 +19,7 @@
             "require": "./dist/icons/index.js"
         },
         "./components": {
-            "types": "./types/lib/components/index.d.ts",
+            "types": "./dist/types/lib/components/index.d.ts",
             "import": "./dist/components/index.js",
             "require": "./dist/components/index.js"
         }
