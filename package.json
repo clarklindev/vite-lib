@@ -12,7 +12,12 @@
             "import": "./dist/main.js",
             "require": "./dist/main.js"
         },
-        "./styles.css": "./dist/assets/styles.css"
+        "./styles.css": "./dist/assets/styles.css",
+        "./icons": {
+            "types": "./dist/types/lib/icons.d.ts",
+            "import": "./dist/icons.js",
+            "require": "./dist/icons.js"
+        }
     },
     "files": [
         "dist"
