@@ -15,6 +15,7 @@ import PopoverExample from './examples/Popover';
 import DatepickerExample from './examples/Datepicker';
 import DialogExample from './examples/Dialog';
 import DividerExample from './examples/Divider';
+import DropdownExample from './examples/Dropdown';
 
 function App() {
     return (
@@ -36,6 +37,7 @@ function App() {
             <DatepickerExample />
             <DialogExample />
             <DividerExample />
+            <DropdownExample />
         </>
     );
 }
