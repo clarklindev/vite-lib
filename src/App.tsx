@@ -25,6 +25,7 @@ import RadioButtonGroupExample from './examples/RadioButtonGroup';
 import SelectExample from './examples/Select';
 import SliderExample from './examples/Slider';
 import SliderMultiRangeExample from './examples/SliderMultiRange';
+import SnackbarExample from './examples/Snackbar';
 
 function App() {
     return (
@@ -56,6 +57,7 @@ function App() {
             <SelectExample />
             <SliderExample />
             <SliderMultiRangeExample />
+            <SnackbarExample />
         </>
     );
 }

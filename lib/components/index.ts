@@ -28,3 +28,4 @@ export { RadioButtonGroup } from './RadioButtonGroup';
 export { Select } from './Select';
 export { Slider } from './Slider';
 export { SliderMultiRange } from './SliderMultiRange';
+export { Snackbar } from './Snackbar';
