@@ -28,6 +28,7 @@ import SliderMultiRangeExample from './examples/SliderMultiRange';
 import SnackbarExample from './examples/Snackbar';
 import SpinnerExample from './examples/Spinner';
 import TableExample from './examples/Table';
+import TabsExample from './examples/Tabs';
 
 function App() {
     return (
@@ -62,6 +63,7 @@ function App() {
             <SnackbarExample />
             <SpinnerExample />
             <TableExample />
+            <TabsExample />
         </>
     );
 }

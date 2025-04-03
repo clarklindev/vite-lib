@@ -31,3 +31,4 @@ export { SliderMultiRange } from './SliderMultiRange';
 export { Snackbar } from './Snackbar';
 export { Spinner } from './Spinner';
 export { Table } from './Table';
+export { Tabs } from './Tabs';
