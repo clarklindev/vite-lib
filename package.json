@@ -19,6 +19,10 @@
             "types": "./dist/types/components/index.d.ts",
             "import": "./dist/components/index.js"
         },
+        "./components/*": {
+            "types": "./dist/types/components/*/index.d.ts",
+            "import": "./dist/components/*/index.js"
+        },
         "./styles.css": "./dist/assets/styles.css"
     },
     "files": [
