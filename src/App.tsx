@@ -33,6 +33,7 @@ import TextExample from './examples/Text';
 import TextareaExample from './examples/Textarea';
 import ToggleButtonExample from './examples/ToggleButton';
 import ToggleSwitchExample from './examples/ToggleSwitch';
+// import TreeExample from './examples/Tree';
 
 function App() {
     return (
@@ -72,6 +73,7 @@ function App() {
             <TextareaExample />
             <ToggleButtonExample />
             <ToggleSwitchExample />
+            {/* <TreeExample /> */}
         </>
     );
 }
