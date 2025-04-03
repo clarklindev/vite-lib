@@ -17,3 +17,4 @@ export { Popover } from './Popover';
 export { Calendar } from './Calendar';
 export { Datepicker } from './Datepicker';
 export { Dialog } from './Dialog';
+export { Divider } from './Divider';
