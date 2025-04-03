@@ -29,3 +29,5 @@ export { Select } from './Select';
 export { Slider } from './Slider';
 export { SliderMultiRange } from './SliderMultiRange';
 export { Snackbar } from './Snackbar';
+export { Spinner } from './Spinner';
+export { Table } from './Table';

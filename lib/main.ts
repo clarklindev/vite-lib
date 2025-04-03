@@ -32,3 +32,4 @@ export { Slider } from 'lib/components/Slider';
 export { SliderMultiRange } from 'lib/components/SliderMultiRange';
 export { Snackbar } from 'lib/components/Snackbar';
 export { Spinner } from 'lib/components/Spinner';
+export { Table } from 'lib/components/Table';

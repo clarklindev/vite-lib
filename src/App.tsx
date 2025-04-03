@@ -26,6 +26,8 @@ import SelectExample from './examples/Select';
 import SliderExample from './examples/Slider';
 import SliderMultiRangeExample from './examples/SliderMultiRange';
 import SnackbarExample from './examples/Snackbar';
+import SpinnerExample from './examples/Spinner';
+import TableExample from './examples/Table';
 
 function App() {
     return (
@@ -58,6 +60,8 @@ function App() {
             <SliderExample />
             <SliderMultiRangeExample />
             <SnackbarExample />
+            <SpinnerExample />
+            <TableExample />
         </>
     );
 }
