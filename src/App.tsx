@@ -9,6 +9,8 @@ import IconExample from './examples/Icon';
 import CheckboxExample from './examples/Checkbox';
 import CheckboxGroupExample from './examples/CheckboxGroup';
 import HeadingExample from './examples/Heading';
+import InputExample from './examples/Input';
+import CounterExample from './examples/Counter';
 
 function App() {
     return (
@@ -24,6 +26,8 @@ function App() {
             <CheckboxExample />
             <CheckboxGroupExample />
             <HeadingExample />
+            <InputExample />
+            <CounterExample />
         </>
     );
 }

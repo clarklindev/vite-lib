@@ -12,3 +12,4 @@ export { Heading } from './Heading';
 export { Layout } from './Layout';
 export { Checkbox } from './Checkbox';
 export { CheckboxGroup } from './CheckboxGroup';
+export { Counter } from './Counter';
