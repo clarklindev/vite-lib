@@ -20,3 +20,5 @@ export { Dialog } from './Dialog';
 export { Divider } from './Divider';
 export { Dropdown } from './Dropdown';
 export { InputOtp } from './InputOtp';
+export { List } from './List';
+export { Pagination } from './Pagination';

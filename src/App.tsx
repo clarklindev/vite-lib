@@ -17,6 +17,8 @@ import DialogExample from './examples/Dialog';
 import DividerExample from './examples/Divider';
 import DropdownExample from './examples/Dropdown';
 import InputOtpExample from './examples/InputOtp';
+import ListExample from './examples/List';
+import PaginationExample from './examples/Pagination';
 
 function App() {
     return (
@@ -40,6 +42,8 @@ function App() {
             <DividerExample />
             <DropdownExample />
             <InputOtpExample />
+            <ListExample />
+            <PaginationExample />
         </>
     );
 }
