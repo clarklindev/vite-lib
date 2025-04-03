@@ -8,3 +8,7 @@ export { Accordion } from './Accordion';
 export { Avatar } from './Avatar';
 export { Badge } from './Badge';
 export { Breadcrumb } from './Breadcrumb';
+export { Heading } from './Heading';
+export { Layout } from './Layout';
+export { Checkbox } from './Checkbox';
+export { CheckboxGroup } from './CheckboxGroup';

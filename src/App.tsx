@@ -7,6 +7,8 @@ import CardExample from './examples/Card';
 import IconExample from './examples/Icon';
 // import BreadcrumbExample from './examples/Breadcrumb';
 import CheckboxExample from './examples/Checkbox';
+import CheckboxGroupExample from './examples/CheckboxGroup';
+import HeadingExample from './examples/Heading';
 
 function App() {
     return (
@@ -20,6 +22,8 @@ function App() {
             <IconExample />
             <CalendarExample />
             <CheckboxExample />
+            <CheckboxGroupExample />
+            <HeadingExample />
         </>
     );
 }
