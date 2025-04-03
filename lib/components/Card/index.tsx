@@ -10,7 +10,7 @@ const Card = ({ className, ...props }: CardProps) => {
     return (
         <div
             data-component={Card.displayName}
-            className={cn('text-white border-[var(--border-color)] border rounded-lg min-h-auto p-10', className, {
+            className={cn('text-white border-black border rounded-lg min-h-auto p-10', className, {
                 'bg-gray-400': loading
             })}
             {...props}
