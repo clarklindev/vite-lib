@@ -77,14 +77,11 @@
         "@tailwindcss/vite": "^4.0.17",
         "class-variance-authority": "^0.7.1",
         "clsx": "^2.1.1",
-        "libtest": "link:../../../../../../AppData/Local/pnpm/global/5/node_modules/@fightclub/libtest",
         "react-icons": "^5.5.0",
         "tailwind-merge": "^3.0.2",
         "tailwindcss": "^4.1.1"
     },
     "pnpm": {
-        "overrides": {
-            "libtest": "link:../../../../../../AppData/Local/pnpm/global/5/node_modules/@fightclub/libtest"
-        }
+        "overrides": {}
     }
 }
