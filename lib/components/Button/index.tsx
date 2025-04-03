@@ -1,5 +1,5 @@
 // lib/components/Button/index.tsx
-import { cn } from '../../utils/cn'; // Assuming you have a cn utility
+import { cn } from 'lib/utils/cn'; // Assuming you have a cn utility
 
 export function Button(props: React.ButtonHTMLAttributes<HTMLButtonElement>) {
     const { className, children, ...restProps } = props;

@@ -27,7 +27,11 @@
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "noFallthroughCasesInSwitch": true,
-        "noImplicitAny": false
+        "noImplicitAny": false,
+        "baseUrl": ".", // Set base URL to the root of the project
+        "paths": {
+            "lib/*": ["lib/*"] // Resolve 'lib' as a folder in the root directory
+        }
     },
     "include": ["src/**/*", "src/types/**/*", "lib/**/*"]
 }

@@ -10,6 +10,11 @@ import react from '@vitejs/plugin-react';
 import { libInjectCss } from 'vite-plugin-lib-inject-css';
 
 export default defineConfig({
+    resolve: {
+        alias: {
+            lib: path.resolve(__dirname, 'lib') // Point 'lib' to the root 'lib' folder
+        }
+    },
     plugins: [
         react(),
         tailwindcss(),
