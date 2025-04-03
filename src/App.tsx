@@ -23,6 +23,8 @@ import ProgressLoaderExample from './examples/ProgressLoader';
 import RadioButtonExample from './examples/RadioButton';
 import RadioButtonGroupExample from './examples/RadioButtonGroup';
 import SelectExample from './examples/Select';
+import SliderExample from './examples/Slider';
+import SliderMultiRangeExample from './examples/SliderMultiRange';
 
 function App() {
     return (
@@ -52,6 +54,8 @@ function App() {
             <RadioButtonExample />
             <RadioButtonGroupExample />
             <SelectExample />
+            <SliderExample />
+            <SliderMultiRangeExample />
         </>
     );
 }

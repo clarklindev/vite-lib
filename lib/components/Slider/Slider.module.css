@@ -1,0 +1,30 @@
+input[type="range"].Slider {
+  &::-moz-range-thumb{
+    -moz-appearance: none;
+    pointer-events: auto;
+    cursor: pointer;
+    width: 30px; /* thumbSize */
+    height: 30px; /* thumbSize */
+
+    /* this gives the thumb color and shape - DO NOT REMOVE*/
+    background: #666;
+    border: 1px solid red;
+    border-radius: 50%;
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    pointer-events: auto;
+    cursor: pointer;
+    width: 30px; /* thumbSize */
+    height: 30px; /* thumbSize */
+
+    /* this gives the thumb color and shape - DO NOT REMOVE*/
+    background: #666;
+    border: 1px solid red;
+    border-radius: 50%;
+  }
+
+
+}
+

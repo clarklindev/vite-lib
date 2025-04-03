@@ -26,3 +26,5 @@ export { ProgressLoader } from './ProgressLoader';
 export { RadioButton } from './RadioButton';
 export { RadioButtonGroup } from './RadioButtonGroup';
 export { Select } from './Select';
+export { Slider } from './Slider';
+export { SliderMultiRange } from './SliderMultiRange';
