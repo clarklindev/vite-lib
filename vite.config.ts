@@ -22,19 +22,16 @@ export default defineConfig({
         dts({
             tsconfigPath: './tsconfig.app.json',
             include: ['lib'],
-            outDir: 'dist/types'
+            outDir: 'dist/types',
+            entryRoot: 'lib',
+            rollupTypes: true
         })
     ],
     build: {
         copyPublicDir: false,
         sourcemap: true,
         lib: {
-            entry: resolve(__dirname, 'lib/main.ts'),
-            formats: ['es']
-        },
-        rollupOptions: {
-            external: ['react', 'react-dom'],
-            input: Object.fromEntries(
+            entry: Object.fromEntries(
                 glob
                     .sync('lib/**/*.{ts,tsx}', {
                         ignore: ['lib/**/*.d.ts']
@@ -48,9 +45,15 @@ export default defineConfig({
                         fileURLToPath(new URL(file, import.meta.url))
                     ])
             ),
+            formats: ['es']
+        },
+        rollupOptions: {
+            external: ['react', 'react-dom'],
             output: {
                 assetFileNames: 'assets/[name][extname]',
-                entryFileNames: '[name].js'
+                entryFileNames: '[name].js',
+                preserveModules: true, // ✅ Keeps folder structure intact in dist/
+                preserveModulesRoot: 'lib' // ✅ Ensures folder paths match `lib/`
             }
         }
     }

@@ -4,6 +4,9 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  libtest: link:../../../../../../AppData/Local/pnpm/global/5/node_modules/@fightclub/libtest
+
 importers:
 
   .:
@@ -17,6 +20,9 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
+      libtest:
+        specifier: link:../../../../../../AppData/Local/pnpm/global/5/node_modules/@fightclub/libtest
+        version: link:../../../../../../AppData/Local/pnpm/global/5/node_modules/@fightclub/libtest
       react-icons:
         specifier: ^5.5.0
         version: 5.5.0(react@19.1.0)

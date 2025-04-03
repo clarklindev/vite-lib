@@ -6,7 +6,7 @@ export function Button(props: React.ButtonHTMLAttributes<HTMLButtonElement>) {
     return (
         <button
             className={cn(
-                'text-red-400 hover:text-red-800', // base styles
+                'text-red-400 hover:text-green-800', // base styles
                 className // allow overrides
             )}
             {...restProps}
