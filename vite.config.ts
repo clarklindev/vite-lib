@@ -20,6 +20,7 @@ export default defineConfig({
         tailwindcss(),
         libInjectCss(),
         dts({
+            tsconfigPath: './tsconfig.app.json',
             include: ['lib'],
             outDir: 'dist/types'
         })
