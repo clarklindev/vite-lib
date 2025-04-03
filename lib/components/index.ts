@@ -22,3 +22,4 @@ export { Dropdown } from './Dropdown';
 export { InputOtp } from './InputOtp';
 export { List } from './List';
 export { Pagination } from './Pagination';
+export { ProgressLoader } from './ProgressLoader';

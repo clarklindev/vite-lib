@@ -19,6 +19,7 @@ import DropdownExample from './examples/Dropdown';
 import InputOtpExample from './examples/InputOtp';
 import ListExample from './examples/List';
 import PaginationExample from './examples/Pagination';
+import ProgressLoaderExample from './examples/ProgressLoader';
 
 function App() {
     return (
@@ -44,6 +45,7 @@ function App() {
             <InputOtpExample />
             <ListExample />
             <PaginationExample />
+            <ProgressLoaderExample />
         </>
     );
 }
