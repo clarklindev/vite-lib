@@ -20,6 +20,9 @@ import InputOtpExample from './examples/InputOtp';
 import ListExample from './examples/List';
 import PaginationExample from './examples/Pagination';
 import ProgressLoaderExample from './examples/ProgressLoader';
+import RadioButtonExample from './examples/RadioButton';
+import RadioButtonGroupExample from './examples/RadioButtonGroup';
+import SelectExample from './examples/Select';
 
 function App() {
     return (
@@ -46,6 +49,9 @@ function App() {
             <ListExample />
             <PaginationExample />
             <ProgressLoaderExample />
+            <RadioButtonExample />
+            <RadioButtonGroupExample />
+            <SelectExample />
         </>
     );
 }
