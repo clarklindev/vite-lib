@@ -32,6 +32,7 @@ import TabsExample from './examples/Tabs';
 import TextExample from './examples/Text';
 import TextareaExample from './examples/Textarea';
 import ToggleButtonExample from './examples/ToggleButton';
+import ToggleSwitchExample from './examples/ToggleSwitch';
 
 function App() {
     return (
@@ -70,6 +71,7 @@ function App() {
             <TextExample />
             <TextareaExample />
             <ToggleButtonExample />
+            <ToggleSwitchExample />
         </>
     );
 }
