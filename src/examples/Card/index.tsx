@@ -1,4 +1,4 @@
-import { Card } from '@/components/Card';
+import { Card } from '../../../lib/components';
 
 const CardExample = () => {
     return <Card />;

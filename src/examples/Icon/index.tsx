@@ -1,5 +1,5 @@
-import { Icon } from '@/components/Icon';
-import { ShoppingCartIcon } from '@/icons';
+import { Icon } from '../../../lib/components';
+import { ShoppingCartIcon } from '../../../lib/icons';
 
 const IconExample = () => {
     return (
