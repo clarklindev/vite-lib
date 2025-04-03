@@ -13,3 +13,6 @@ export { Layout } from './Layout';
 export { Checkbox } from './Checkbox';
 export { CheckboxGroup } from './CheckboxGroup';
 export { Counter } from './Counter';
+export { Popover } from './Popover';
+export { Calendar } from './Calendar';
+export { Datepicker } from './Datepicker';

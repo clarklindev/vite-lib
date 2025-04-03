@@ -11,6 +11,8 @@ import CheckboxGroupExample from './examples/CheckboxGroup';
 import HeadingExample from './examples/Heading';
 import InputExample from './examples/Input';
 import CounterExample from './examples/Counter';
+import PopoverExample from './examples/Popover';
+import DatepickerExample from './examples/Datepicker';
 
 function App() {
     return (
@@ -28,6 +30,8 @@ function App() {
             <HeadingExample />
             <InputExample />
             <CounterExample />
+            <PopoverExample />
+            <DatepickerExample />
         </>
     );
 }
