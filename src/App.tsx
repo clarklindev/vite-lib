@@ -13,6 +13,7 @@ import InputExample from './examples/Input';
 import CounterExample from './examples/Counter';
 import PopoverExample from './examples/Popover';
 import DatepickerExample from './examples/Datepicker';
+import DialogExample from './examples/Dialog';
 
 function App() {
     return (
@@ -32,6 +33,7 @@ function App() {
             <CounterExample />
             <PopoverExample />
             <DatepickerExample />
+            <DialogExample />
         </>
     );
 }
