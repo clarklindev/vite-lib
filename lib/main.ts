@@ -35,3 +35,5 @@ export { Spinner } from 'lib/components/Spinner';
 export { Table } from 'lib/components/Table';
 export { Tabs } from 'lib/components/Tabs';
 export { Text } from 'lib/components/Text';
+export { Textarea } from 'lib/components/Textarea';
+export { ToggleButton } from 'lib/components/ToggleButton';

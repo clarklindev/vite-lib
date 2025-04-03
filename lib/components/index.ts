@@ -34,3 +34,4 @@ export { Table } from './Table';
 export { Tabs } from './Tabs';
 export { Text } from './Text';
 export { Textarea } from './Textarea';
+export { ToggleButton } from './ToggleButton';
