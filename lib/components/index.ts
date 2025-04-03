@@ -32,3 +32,5 @@ export { Snackbar } from './Snackbar';
 export { Spinner } from './Spinner';
 export { Table } from './Table';
 export { Tabs } from './Tabs';
+export { Text } from './Text';
+export { Textarea } from './Textarea';

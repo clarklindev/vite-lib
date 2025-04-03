@@ -29,6 +29,8 @@ import SnackbarExample from './examples/Snackbar';
 import SpinnerExample from './examples/Spinner';
 import TableExample from './examples/Table';
 import TabsExample from './examples/Tabs';
+import TextExample from './examples/Text';
+import TextareaExample from './examples/Textarea';
 
 function App() {
     return (
@@ -64,6 +66,8 @@ function App() {
             <SpinnerExample />
             <TableExample />
             <TabsExample />
+            <TextExample />
+            <TextareaExample />
         </>
     );
 }
