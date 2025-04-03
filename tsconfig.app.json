@@ -2,7 +2,7 @@
     "compilerOptions": {
         "composite": true,
         "declaration": true,
-        "declarationDir": "./dist", // Specify where to output .d.ts files
+        "declarationDir": "./dist/types",
         "typeRoots": ["node_modules/@types", "src/types"],
         "outDir": "./dist", // The output directory for compiled JavaScript files
         "esModuleInterop": true,
