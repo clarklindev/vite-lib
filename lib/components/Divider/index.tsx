@@ -15,7 +15,7 @@ const Divider = ({ variation = 'horizontal', children, ...rest }: DividerProps) 
             return (
                 <div
                     data-component={`${Divider.displayName}-Horizontal`}
-                    className={[children ? `border-none` : `border-b border-solid border-red-400`, children ? `m-0` : `my-2.5 mx-0`, `inline-flex flex-row`, `relative`, `w-full`].join(' ')}
+                    className={[children ? `border-none` : `border-b border-solid`, children ? `m-0` : `my-2.5 mx-0`, `inline-flex flex-row`, `relative`, `w-full`].join(' ')}
                     {...rest}
                 >
                     {children && (
