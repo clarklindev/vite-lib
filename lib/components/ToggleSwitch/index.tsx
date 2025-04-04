@@ -9,18 +9,18 @@ const ToggleSwitch = React.memo(({ onChange, savedData }: ToggleSwitchProps) => 
     return (
         <label
             data-component={ToggleSwitch.displayName}
-            className={`
-        relative 
+            className={[
+        `relative 
         inline-block 
         w-[50px]
-        h-[25px]
-        bg-red-300
-        rounded-full
+        h-[26px]`,
+        savedData ? `bg-blue-500` : `bg-red-300`,
+        `rounded-full
         group
         flex
         items-center
         cursor-pointer
-      `}
+      `].join(' ')}
         >
             <div
                 className={[
@@ -35,7 +35,8 @@ const ToggleSwitch = React.memo(({ onChange, savedData }: ToggleSwitchProps) => 
           duration-200 
           transform 
           `,
-                    savedData ? `translate-x-[28px]` : `translate-x-[2px]`
+          `translate-y-[3px]`,
+                    savedData ? `translate-x-[27px]` : `translate-x-[3px]`
                 ].join(' ')}
             ></div>
             <input className="hidden" type="checkbox" checked={savedData} onChange={onChange} />
