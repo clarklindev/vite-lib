@@ -22,7 +22,7 @@ const InputVariants = cva(
           border-solid 
           flex
           items-center
-          border-[var(--border-color)]`,
+          border border-gray-400/50 `,
                 unstyled: `bg-transparent
           border-0 
           border-transparent 

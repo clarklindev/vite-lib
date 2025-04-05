@@ -97,6 +97,7 @@ const InputExample = () => {
                     {savedData.length > 0 && (
                         <Button
                             intent="icon"
+                            padding="none"
                             onClick={() => {
                                 setSavedData('');
                             }}
