@@ -37,3 +37,4 @@ export { Textarea } from './Textarea';
 export { ToggleButton } from './ToggleButton';
 export { ToggleSwitch } from './ToggleSwitch';
 export { Tree } from './Tree';
+export {Navbar} from './Navbar';

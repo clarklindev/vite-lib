@@ -33,14 +33,44 @@ import TextExample from './examples/Text';
 import TextareaExample from './examples/Textarea';
 import ToggleButtonExample from './examples/ToggleButton';
 import ToggleSwitchExample from './examples/ToggleSwitch';
-import { Card } from 'lib/components';
+import NavbarExample from './examples/Navbar';
+
+import { Button, Card, Icon, Navbar } from 'lib/components';
+import { ModeLightIcon, ModeDarkIcon } from 'lib/icons';
+import { useTheme } from 'lib/context/ThemeContext';
+import { useEffect } from 'react';
 // import TreeExample from './examples/Tree';
 
-function App() {
+
+
+const App = ()=> {
+    const {colorScheme, setColorScheme} = useTheme();
+
+    useEffect(()=>{
+        console.log('darkmode: ', colorScheme)
+        }, [colorScheme]
+    )
+
+
     return (
         <>
-            <h1 className="text-3xl bg-red-500 font-bold underline">Vite-lib</h1>
-            <Card>
+            <div>
+                <h1 className="text-3xl bg-red-500 font-bold underline">Vite-lib</h1>
+                <Navbar>
+                    <Button intent="icon" onClick={()=>setColorScheme('dark')}>
+                        <Icon size="L">
+                            <ModeDarkIcon />
+                        </Icon>
+                    </Button>
+                    <Button intent="icon" onClick={()=>setColorScheme('light')}>
+                        <Icon size="L">
+                            <ModeLightIcon />
+                        </Icon>
+                    </Button>
+                </Navbar>
+                
+            </div>
+            <Card className="mt-2">
                 <Card.Title>Accordion</Card.Title>
                 <Card.Content><AccordionExample /></Card.Content>
             </Card>
@@ -130,6 +160,11 @@ function App() {
             <Card>
                 <Card.Title>List</Card.Title>
                 <Card.Content><ListExample /></Card.Content>
+            </Card>
+
+            <Card>
+                <Card.Title>Navbar</Card.Title>
+                <Card.Content><NavbarExample /></Card.Content>
             </Card>
             
             <Card>

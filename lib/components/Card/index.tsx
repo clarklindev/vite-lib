@@ -9,7 +9,7 @@ type CardProps = React.HTMLProps<HTMLDivElement> & {
 
 const Card = ({ className, children }: CardProps) => {
     return (
-        <div data-component={Card.displayName} className={cn('border-black border rounded-lg min-h-auto mb-4', className)}>
+        <div data-component={Card.displayName} className={cn('border border-gray-400/50 rounded-lg min-h-auto mb-4', className)}>
             {children}
         </div>
     );
@@ -17,7 +17,7 @@ const Card = ({ className, children }: CardProps) => {
 
 const title = ({children, className}: {children:string, className?:string})=>{
     return (<div className="flex flex-col justify-center">
-        <Heading variation="h1" size="M" className={cn('px-2', className)}>
+        <Heading variation="h1" size="XS" className={cn('py-2 px-2', className)}>
             {children}
         </Heading>
         <Divider/>

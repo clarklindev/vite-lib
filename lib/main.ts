@@ -39,3 +39,4 @@ export { Textarea } from 'lib/components/Textarea';
 export { ToggleButton } from 'lib/components/ToggleButton';
 export { ToggleSwitch } from 'lib/components/ToggleSwitch';
 export { Tree } from 'lib/components/Tree';
+export { Navbar } from 'lib/components/Navbar';
