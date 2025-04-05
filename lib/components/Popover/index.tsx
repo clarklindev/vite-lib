@@ -76,7 +76,7 @@ Popover.Content = ({ children }: ContentProps): ReactElement | null => {
     }, [togglePopover]);
 
     return isVisible ? (
-        <div className="popover-content absolute" ref={contentRef}>
+        <div className="popover-content absolute z-1000" ref={contentRef}>
             {children}
         </div>
     ) : null;
