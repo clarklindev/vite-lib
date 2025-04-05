@@ -1,4 +1,4 @@
-import { useTheme } from 'lib/context/ThemeContext';
+// import { useTheme } from 'lib/context/ThemeContext';
 
 type TextProps = {
     lineHeight?: string;
@@ -25,12 +25,12 @@ const Text = ({
     let marginBottom = 'mb-0';
 
     //theme
-    let { theme } = useTheme();
-    if (theme) {
-        lineHeight = theme.Text.lineHeight;
-        color = theme.Text.color;
-        marginBottom = theme.Text.marginBottom;
-    }
+    // let { theme } = useTheme();
+    // if (theme) {
+        // lineHeight = theme.Text.lineHeight;
+        // color = theme.Text.color;
+        // marginBottom = theme.Text.marginBottom;
+    // }
 
     //props
     if (propsLineHeight) {

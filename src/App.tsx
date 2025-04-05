@@ -55,18 +55,26 @@ const App = ()=> {
     return (
         <>
             <div>
-                <h1 className="text-3xl bg-red-500 font-bold underline">Vite-lib</h1>
                 <Navbar>
-                    <Button intent="icon" onClick={()=>setColorScheme('dark')}>
-                        <Icon size="L">
-                            <ModeDarkIcon />
-                        </Icon>
-                    </Button>
-                    <Button intent="icon" onClick={()=>setColorScheme('light')}>
-                        <Icon size="L">
-                            <ModeLightIcon />
-                        </Icon>
-                    </Button>
+                    <Navbar.GroupLeft>
+                        <h1 className="text-3xl bg-red-500 font-bold underline">Vite-lib</h1>
+                    </Navbar.GroupLeft>
+
+                    <Navbar.GroupRight>
+                    {
+                        colorScheme === 'dark' ? 
+                        (<Button intent="icon" onClick={()=>setColorScheme('light')}>
+                            <Icon size="L">
+                                <ModeLightIcon />
+                            </Icon>
+                        </Button>) : 
+                        (<Button intent="icon" onClick={()=>setColorScheme('dark')}>
+                            <Icon size="L">
+                                <ModeDarkIcon />
+                            </Icon>
+                        </Button>) 
+                    }
+                    </Navbar.GroupRight>
                 </Navbar>
                 
             </div>
