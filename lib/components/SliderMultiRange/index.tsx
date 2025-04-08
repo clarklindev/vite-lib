@@ -122,7 +122,7 @@ export const SliderMultiRange = ({
         >
             <div
                 data-component="SliderTrack"
-                className={[`absolute border rounded-full bg-orange-500`].join(' ')}
+                className={[`absolute rounded-full bg-red-600/40`].join(' ')}
                 style={{
                     ...(orientation === Orientation.HORIZONTAL && {
                         width: `100%`,

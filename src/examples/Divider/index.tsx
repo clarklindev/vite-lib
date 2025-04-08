@@ -25,7 +25,7 @@ const DividerExample = () => {
                 Divider (vertical)
             </Heading>
             <Layout>
-                <div style={{ height: '300px', background: `rgba(255, 0, 0, 0.5)` }} className="flex flex-start items-start">
+                <div style={{ height: '300px' }} className="flex flex-start items-start">
                     hello
                     <Divider variation="vertical" />
                     world
@@ -36,7 +36,7 @@ const DividerExample = () => {
                 Divider labelled (vertical)
             </Heading>
             <Layout>
-                <div style={{ height: '300px', background: `rgba(255, 0, 0, 0.1)` }} className="flex flex-start items-start">
+                <div style={{ height: '300px' }} className="flex flex-start items-start">
                     hello<Divider variation="vertical">OR</Divider>
                     world
                 </div>

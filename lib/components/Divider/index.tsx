@@ -31,14 +31,14 @@ const Divider = ({ variation = 'horizontal', children, ...rest }: DividerProps) 
                                 "before:content-[' ']",
                                 'before:border-b',
                                 'before:border-solid',
-                                'before:border-red-400',
+                                'before:border-gray-400/50',
                                 'before:mr-4',
 
                                 'after:w-full',
                                 "after:content-[' ']",
                                 'after:border-b',
                                 'after:border-solid',
-                                'after:border-red-400',
+                                'after:border-gray-400/50',
                                 'after:ml-4'
                             ].join(' ')}
                         >
@@ -53,7 +53,7 @@ const Divider = ({ variation = 'horizontal', children, ...rest }: DividerProps) 
                 <div
                     ref={dividerRef}
                     data-component={`${Divider.displayName}-Vertical`}
-                    className={['h-full relative inline-flex items-stretch', children ? 'border-r-0' : `border-r border-solid border-white `, children ? 'm-0' : 'my-0 mx-2.5'].join(' ')}
+                    className={['h-full relative inline-flex items-stretch', children ? 'border-r-0' : `border-r border-solid border-gray-400/50 `, children ? 'm-0' : 'my-0 mx-2.5'].join(' ')}
                     {...rest}
                 >
                     {children && (
@@ -73,7 +73,7 @@ const Divider = ({ variation = 'horizontal', children, ...rest }: DividerProps) 
                                 "before:content-[' ']",
                                 'before:border-r',
                                 'before:border-solid',
-                                'before:border-red-400',
+                                'before:border-gray-400/50',
                                 'before:mb-4',
 
                                 'after:flex',
@@ -82,7 +82,7 @@ const Divider = ({ variation = 'horizontal', children, ...rest }: DividerProps) 
                                 "after:content-[' ']",
                                 'after:border-r',
                                 'after:border-solid',
-                                'after:border-red-400',
+                                'after:border-gray-400/50',
                                 'after:mt-4'
                             ].join(' ')}
                         >

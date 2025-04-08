@@ -3,7 +3,7 @@ type SpinnerProps = {
     color?: string;
 };
 
-const Spinner = ({ size = `5`, color = 'white' }: SpinnerProps) => {
+const Spinner = ({ size = `5` }: SpinnerProps) => {
     return (
         <div
             data-component={Spinner.displayName}
@@ -12,9 +12,10 @@ const Spinner = ({ size = `5`, color = 'white' }: SpinnerProps) => {
                 height: `${size}px`
             }}
         >
-            <div
-                className={[`w-full h-full border-2 b-solid`, `border-${color}-600`, `border-t-transparent rounded-full animate-spin-fast`].join(' ')} //order matters
-            />
+            <svg className="mr-3 w-10 h-10 animate-spin" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <circle className="stroke-gray-400" cx="12" cy="12" r="10" fill="none" strokeWidth="1" />
+                <circle className="stroke-white dark:stroke-black" cx="12" cy="12" r="10" fill="none" strokeWidth="1" strokeDasharray="63.66" strokeDashoffset="31.83" />
+            </svg>
         </div>
     );
 };

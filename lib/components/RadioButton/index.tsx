@@ -56,28 +56,17 @@ box-border
 cursor-pointer 
 rounded-full
 border-[var(--border)]
-bg-gray-400
+bg-gray-400/50
       `} // bg-[var(input-background-color)]
             >
                 <Icon size={size}>
                     {checked ? (
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 30 30">
-                            <circle cx="15" cy="15" r="14" fill="currentColor"></circle>
+                            <circle cx="15" cy="15.5" r="8" fill="currentColor"></circle>
                         </svg>
                     ) : (
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            //     fill={`
-                            // var(--clr-background)
-
-                            // `}
-                            fill={`
-                        #FF000033
-                        
-                        `}
-                            viewBox="0 0 30 30"
-                        >
-                            <circle cx="15" cy="15" r="14" stroke="var(--clr-foreground)" strokeWidth={1}></circle>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                            <circle cx="15" cy="15.5" r="8" stroke="var(--clr-foreground)" strokeWidth={1}></circle>
                         </svg>
                     )}
                 </Icon>

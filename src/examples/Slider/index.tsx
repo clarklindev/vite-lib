@@ -11,8 +11,7 @@ const SliderExample = () => {
                 <div
                     style={{
                         width: '100%',
-                        height: '350px',
-                        border: '1px solid red'
+                        height: '50px'
                     }}
                 >
                     <Slider value={savedData} orientation="horizontal" onChange={setSavedData} />
@@ -21,8 +20,7 @@ const SliderExample = () => {
                 <div
                     style={{
                         width: '100%',
-                        height: '350px',
-                        border: '1px solid red'
+                        height: '350px'
                     }}
                 >
                     <Slider value={savedData} orientation="vertical" onChange={setSavedData} />

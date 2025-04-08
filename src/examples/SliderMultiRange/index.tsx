@@ -9,8 +9,7 @@ const SliderMultiRangeExample = () => {
             <div
                 style={{
                     width: '100%',
-                    height: '350px',
-                    border: '1px solid red'
+                    height: '50px'
                 }}
             >
                 <SliderMultiRange sliderValues={sliderValues} colors={['red', 'yellow', 'green']} orientation="horizontal" onChange={setSliderValues} />
@@ -19,8 +18,7 @@ const SliderMultiRangeExample = () => {
             <div
                 style={{
                     width: '100%',
-                    height: '350px',
-                    border: '1px solid red'
+                    height: '350px'
                 }}
             >
                 <SliderMultiRange sliderValues={sliderValues} colors={['red', 'yellow', 'green']} orientation="vertical" onChange={setSliderValues} />
