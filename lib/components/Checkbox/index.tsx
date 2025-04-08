@@ -28,14 +28,14 @@ const Checkbox = ({ checked, name, label = '', onChange, size = 'XL', indetermin
             <input
                 type="checkbox"
                 className={`
-        hidden
-        h-0
-        w-0
-        overflow-hidden
-        absolute
-        top-0
-        left-0
-        `}
+                    hidden
+                    h-0
+                    w-0
+                    overflow-hidden
+                    absolute
+                    top-0
+                    left-0
+                `}
                 checked={checked}
                 ref={inputRef}
                 onChange={onChange}
@@ -44,12 +44,12 @@ const Checkbox = ({ checked, name, label = '', onChange, size = 'XL', indetermin
 
             <div
                 className={`
-        cursor-pointer
-        overflow-hidden 
-        rounded-md
-        bg-[var(--clr-background)]
-        bg-[var(input-background-color)]
-      `}
+                    cursor-pointer
+                    overflow-hidden 
+                    rounded-md
+                    bg-[var(--clr-background)]
+                    bg-[var(input-background-color)]
+                `}
             >
                 {indeterminate ? (
                     <Icon size={size}>
@@ -57,7 +57,7 @@ const Checkbox = ({ checked, name, label = '', onChange, size = 'XL', indetermin
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
                             fill="none"
-                            className={`${border ? 'stroke-black' : 'stroke-none'}`}
+                            className={`${border ? 'stroke-black dark:stroke-white' : 'stroke-none'}`}
                             strokeWidth="0.5"
                             strokeLinecap="round"
                             strokeLinejoin="round"
@@ -72,7 +72,7 @@ const Checkbox = ({ checked, name, label = '', onChange, size = 'XL', indetermin
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
                             fill="none"
-                            className={`w-10 h-10 ${border ? 'stroke-black' : 'stroke-none'}`}
+                            className={`w-10 h-10 stroke-black dark:stroke-white`}
                             strokeWidth="0.5"
                             strokeLinecap="round"
                             strokeLinejoin="round"
@@ -88,7 +88,7 @@ const Checkbox = ({ checked, name, label = '', onChange, size = 'XL', indetermin
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
                             fill="none"
-                            className={`${border ? 'stroke-black' : 'stroke-none'}`}
+                            className={`${border ? 'stroke-black dark:stroke-white' : 'stroke-none'}`}
                             strokeWidth="0.5"
                             strokeLinecap="round"
                             strokeLinejoin="round"

@@ -61,11 +61,11 @@ bg-gray-400/50
             >
                 <Icon size={size}>
                     {checked ? (
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 30 30">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="text-black dark:text-white" fill="currentColor" viewBox="0 0 30 30">
                             <circle cx="15" cy="15.5" r="8" fill="currentColor"></circle>
                         </svg>
                     ) : (
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="text-gray-500/80" fill="currentColor" viewBox="0 0 30 30">
                             <circle cx="15" cy="15.5" r="8" stroke="var(--clr-foreground)" strokeWidth={1}></circle>
                         </svg>
                     )}

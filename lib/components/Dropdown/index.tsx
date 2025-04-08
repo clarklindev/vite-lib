@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useLayoutEffect, useRef, ButtonHTMLAttributes, ReactElement } from 'react';
 
-import { useDropdown, DropdownContextProvider } from 'lib/context/DropdownContext';
+import { useDropdown, DropdownContextProvider } from 'lib/context';
 import { Button } from 'lib/components';
 import { Position } from 'lib/utils/position';
 import { getHorizontalQuadrant } from 'lib/utils/getQuadrant';

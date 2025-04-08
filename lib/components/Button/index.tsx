@@ -9,9 +9,13 @@ const buttonVariants = cva(['box-border', 'inline-flex', 'items-center', 'cursor
         intent: {
             default: '',
             primary: 'bg-black dark:bg-white text-white dark:text-black border-transparent hover:bg-gray-800 dark:hover:bg-gray-300',
+            ['primary-nohover']: 'bg-black dark:bg-white text-white dark:text-black border-transparent dark:hover:bg-gray-300',
             secondary: 'bg-white text-gray-800 border-gray-400 hover:bg-gray-100',
+            ['secondary-nohover']: 'bg-white text-gray-800 border-gray-400',
             contained: 'bg-gray-300 text-gray-700 border-gray-300 hover:bg-gray-400',
+            ['contained-nohover']: 'bg-gray-300 text-gray-700 border-gray-300',
             outlined: `text-gray-800 dark:text-gray-300 border border-gray-800 dark:border-white bg-transparent hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-white`,
+            ['outlined-nohover']: `text-gray-800 dark:text-gray-300 border border-gray-800 dark:border-white bg-transparent`,
             plain: 'border-transparent outline-none ring-transparent',
             text: 'border-transparent underline',
             icon: 'border-transparent'
@@ -20,10 +24,10 @@ const buttonVariants = cva(['box-border', 'inline-flex', 'items-center', 'cursor
         padding: {
             default: '',
             none: 'py-0 px-0',
-            S: 'py-3 px-1',
-            M: 'py-3 px-2',
+            S: 'py-1 px-1',
+            M: 'py-2 px-2',
             L: 'py-3 px-3',
-            XL: 'py-3 px-4'
+            XL: 'py-4 px-4'
         },
 
         borderRadius: {

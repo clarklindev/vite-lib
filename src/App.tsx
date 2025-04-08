@@ -41,16 +41,12 @@ import { useTheme } from 'lib/context/ThemeContext';
 import { useEffect } from 'react';
 // import TreeExample from './examples/Tree';
 
+const App = () => {
+    const { colorScheme, setColorScheme } = useTheme();
 
-
-const App = ()=> {
-    const {colorScheme, setColorScheme} = useTheme();
-
-    useEffect(()=>{
-        console.log('darkmode: ', colorScheme)
-        }, [colorScheme]
-    )
-
+    useEffect(() => {
+        console.log('darkmode: ', colorScheme);
+    }, [colorScheme]);
 
     return (
         <>
@@ -61,199 +57,265 @@ const App = ()=> {
                     </Navbar.GroupLeft>
 
                     <Navbar.GroupRight>
-                    {
-                        colorScheme === 'dark' ? 
-                        (<Button intent="icon" onClick={()=>setColorScheme('light')}>
-                            <Icon size="L">
-                                <ModeLightIcon />
-                            </Icon>
-                        </Button>) : 
-                        (<Button intent="icon" onClick={()=>setColorScheme('dark')}>
-                            <Icon size="L">
-                                <ModeDarkIcon />
-                            </Icon>
-                        </Button>) 
-                    }
+                        {colorScheme === 'dark' ? (
+                            <Button intent="outlined-nohover" padding="S" onClick={() => setColorScheme('light')}>
+                                <Icon size="L">
+                                    <ModeLightIcon />
+                                </Icon>
+                            </Button>
+                        ) : (
+                            <Button intent="outlined-nohover" padding="S" onClick={() => setColorScheme('dark')}>
+                                <Icon size="L">
+                                    <ModeDarkIcon />
+                                </Icon>
+                            </Button>
+                        )}
                     </Navbar.GroupRight>
                 </Navbar>
-                
             </div>
             <Card className="mt-2">
                 <Card.Title>Accordion</Card.Title>
-                <Card.Content><AccordionExample /></Card.Content>
+                <Card.Content>
+                    <AccordionExample />
+                </Card.Content>
             </Card>
 
             <Card>
                 <Card.Title>Avatar</Card.Title>
-                <Card.Content><AvatarExample /></Card.Content>
+                <Card.Content>
+                    <AvatarExample />
+                </Card.Content>
             </Card>
 
             <Card>
                 <Card.Title>Button</Card.Title>
-                <Card.Content><ButtonExample /></Card.Content>
+                <Card.Content>
+                    <ButtonExample />
+                </Card.Content>
             </Card>
 
             <Card>
                 <Card.Title>Card</Card.Title>
-                <Card.Content><CardExample /></Card.Content>
+                <Card.Content>
+                    <CardExample />
+                </Card.Content>
             </Card>
-            
+
             {/* <BreadcrumbExample /> */}
-            
+
             <Card>
                 <Card.Title>Icon</Card.Title>
-                <Card.Content><IconExample /></Card.Content>
+                <Card.Content>
+                    <IconExample />
+                </Card.Content>
             </Card>
 
             <Card>
                 <Card.Title>Calendar</Card.Title>
-                <Card.Content><CalendarExample /></Card.Content>
+                <Card.Content>
+                    <CalendarExample />
+                </Card.Content>
             </Card>
 
             <Card>
                 <Card.Title>Checkbox</Card.Title>
-                <Card.Content><CheckboxExample /></Card.Content>
+                <Card.Content>
+                    <CheckboxExample />
+                </Card.Content>
             </Card>
-            
+
             <Card>
                 <Card.Title>Checkbox Group</Card.Title>
-                <Card.Content><CheckboxGroupExample /></Card.Content>
+                <Card.Content>
+                    <CheckboxGroupExample />
+                </Card.Content>
             </Card>
-            
+
             <Card>
                 <Card.Title>Heading</Card.Title>
-                <Card.Content><HeadingExample /></Card.Content>
+                <Card.Content>
+                    <HeadingExample />
+                </Card.Content>
             </Card>
-           
+
             <Card>
                 <Card.Title>Input</Card.Title>
-                <Card.Content><InputExample /></Card.Content>
+                <Card.Content>
+                    <InputExample />
+                </Card.Content>
             </Card>
 
             <Card>
                 <Card.Title>Input OTP</Card.Title>
-                <Card.Content><InputOtpExample /></Card.Content>
+                <Card.Content>
+                    <InputOtpExample />
+                </Card.Content>
             </Card>
-            
+
             <Card>
                 <Card.Title>Counter</Card.Title>
-                <Card.Content><CounterExample /></Card.Content>
+                <Card.Content>
+                    <CounterExample />
+                </Card.Content>
             </Card>
-            
+
             <Card>
                 <Card.Title>Popover</Card.Title>
-                <Card.Content><PopoverExample /></Card.Content>
+                <Card.Content>
+                    <PopoverExample />
+                </Card.Content>
             </Card>
-            
+
             <Card>
                 <Card.Title>Datepicker</Card.Title>
-                <Card.Content><DatepickerExample /></Card.Content>
+                <Card.Content>
+                    <DatepickerExample />
+                </Card.Content>
             </Card>
-            
+
             <Card>
                 <Card.Title>Dialog</Card.Title>
-                <Card.Content><DialogExample /></Card.Content>
+                <Card.Content>
+                    <DialogExample />
+                </Card.Content>
             </Card>
-            
+
             <Card>
                 <Card.Title>Divider</Card.Title>
-                <Card.Content><DividerExample /></Card.Content>
+                <Card.Content>
+                    <DividerExample />
+                </Card.Content>
             </Card>
 
             <Card>
                 <Card.Title>Dropdown</Card.Title>
-                <Card.Content><DropdownExample /></Card.Content>
+                <Card.Content>
+                    <DropdownExample />
+                </Card.Content>
             </Card>
-            
+
             <Card>
                 <Card.Title>List</Card.Title>
-                <Card.Content><ListExample /></Card.Content>
+                <Card.Content>
+                    <ListExample />
+                </Card.Content>
             </Card>
 
             <Card>
                 <Card.Title>Navbar</Card.Title>
-                <Card.Content><NavbarExample /></Card.Content>
+                <Card.Content>
+                    <NavbarExample />
+                </Card.Content>
             </Card>
-            
+
             <Card>
                 <Card.Title>Pagination</Card.Title>
-                <Card.Content><PaginationExample /></Card.Content>
+                <Card.Content>
+                    <PaginationExample />
+                </Card.Content>
             </Card>
-            
+
             <Card>
                 <Card.Title>Progress loader</Card.Title>
-                <Card.Content><ProgressLoaderExample /></Card.Content>
+                <Card.Content>
+                    <ProgressLoaderExample />
+                </Card.Content>
             </Card>
-            
+
             <Card>
                 <Card.Title>Radio Button</Card.Title>
-                <Card.Content><RadioButtonExample /></Card.Content>
+                <Card.Content>
+                    <RadioButtonExample />
+                </Card.Content>
             </Card>
-            
+
             <Card>
                 <Card.Title>Radio Button Group</Card.Title>
-                <Card.Content><RadioButtonGroupExample /></Card.Content>
+                <Card.Content>
+                    <RadioButtonGroupExample />
+                </Card.Content>
             </Card>
-            
+
             <Card>
                 <Card.Title>Select</Card.Title>
-                <Card.Content><SelectExample /></Card.Content>
+                <Card.Content>
+                    <SelectExample />
+                </Card.Content>
             </Card>
-            
+
             <Card>
                 <Card.Title>Slider</Card.Title>
-                <Card.Content><SliderExample /></Card.Content>
+                <Card.Content>
+                    <SliderExample />
+                </Card.Content>
             </Card>
-            
+
             <Card>
                 <Card.Title>Slider Multi Range</Card.Title>
-                <Card.Content><SliderMultiRangeExample /></Card.Content>
+                <Card.Content>
+                    <SliderMultiRangeExample />
+                </Card.Content>
             </Card>
-            
+
             <Card>
                 <Card.Title>Snackbar</Card.Title>
-                <Card.Content><SnackbarExample /></Card.Content>
+                <Card.Content>
+                    <SnackbarExample />
+                </Card.Content>
             </Card>
-            
+
             <Card>
                 <Card.Title>Spinner</Card.Title>
-                <Card.Content><SpinnerExample /></Card.Content>
+                <Card.Content>
+                    <SpinnerExample />
+                </Card.Content>
             </Card>
-            
+
             <Card>
                 <Card.Title>Table</Card.Title>
-                <Card.Content><TableExample /></Card.Content>
+                <Card.Content>
+                    <TableExample />
+                </Card.Content>
             </Card>
-            
+
             <Card>
                 <Card.Title>Tabs</Card.Title>
-                <Card.Content><TabsExample /></Card.Content>
+                <Card.Content>
+                    <TabsExample />
+                </Card.Content>
             </Card>
-            
+
             <Card>
                 <Card.Title>Text</Card.Title>
-                <Card.Content><TextExample /></Card.Content>
+                <Card.Content>
+                    <TextExample />
+                </Card.Content>
             </Card>
-            
+
             <Card>
                 <Card.Title>Textarea</Card.Title>
-                <Card.Content><TextareaExample /></Card.Content>
+                <Card.Content>
+                    <TextareaExample />
+                </Card.Content>
             </Card>
-            
+
             <Card>
                 <Card.Title>Toggle</Card.Title>
-                <Card.Content><ToggleButtonExample /></Card.Content>
+                <Card.Content>
+                    <ToggleButtonExample />
+                </Card.Content>
             </Card>
-            
+
             <Card>
                 <Card.Title>Toggle switch</Card.Title>
-                <Card.Content><ToggleSwitchExample /></Card.Content>
+                <Card.Content>
+                    <ToggleSwitchExample />
+                </Card.Content>
             </Card>
-            
-            
+
             {/* <TreeExample /> */}
         </>
     );
-}
+};
 
 export default App;

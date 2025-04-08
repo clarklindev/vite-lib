@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 
-import { Button } from 'lib/components/Button';
-import { TabsContextProvider, useTabs } from 'lib/context/TabContext';
+import { Button } from 'lib/components';
+import { TabsContextProvider, useTabs } from 'lib/context';
 
 const Tabs = ({ children }: { children: React.ReactNode }) => {
     return (

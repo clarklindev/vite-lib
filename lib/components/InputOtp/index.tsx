@@ -47,7 +47,7 @@ const InputOtp = ({ length = 6, dashPositions = [] }: { length: number; dashPosi
                         onKeyDown={(e) => handleKeyDown(e, index)}
                         maxLength={1}
                         type="text"
-                        className="w-12 h-12 text-center border-1 rounded-md focus:outline-none focus:ring-1 focus:ring-black"
+                        className="w-12 h-12 text-center border-1 rounded-md focus:outline-none focus:ring-1 focus:ring-black dark:focus:ring-white"
                     />
                     {dashPositions.includes(index + 1) && <span className="mx-1 text-xl">-</span>}
                 </React.Fragment>

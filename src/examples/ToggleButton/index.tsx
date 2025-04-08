@@ -5,8 +5,8 @@ const ToggleButtonExample = () => {
     //the context provider (can technically wrap inside the component itself)
     enum ToggleEnumWithMaybe {
         ON = 'true',
-        OFF = 'false',
-        MAYBE = 'maybe'
+        OFF = 'false'
+        // MAYBE = 'maybe'
     }
 
     return (
@@ -21,13 +21,16 @@ const ToggleButtonExample = () => {
                                     <HeartIcon />
                                 </Icon>
                             );
-
-                        case 'OFF':
-                            return <Icon size="L">OFF</Icon>;
-
                         default:
-                        case 'MAYBE':
-                            return <Icon size="L">'maybe'</Icon>;
+                        case 'OFF':
+                            return (
+                                <Icon size="L">
+                                    <HeartIcon color="red" />
+                                </Icon>
+                            );
+
+                        // case 'MAYBE':
+                        //     return <Icon size="L">'maybe'</Icon>;
                     }
                 }}
             />
