@@ -1,5 +1,5 @@
-import { Icon } from '@fightclub/libtest';
-import { ShoppingCartIcon } from '@fightclub/libtest/icons';
+import { Icon } from 'lib/components';
+import { ShoppingCartIcon } from 'lib/icons';
 
 const IconExample = () => {
     return (

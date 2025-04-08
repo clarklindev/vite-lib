@@ -1,5 +1,4 @@
-import { Button } from '@fightclub/libtest';
-import { Icon, Label, Layout } from 'lib/components';
+import { Button, Icon, Label, Layout } from 'lib/components';
 import { ShoppingCartIcon, ThumbsUpIcon } from 'lib/icons';
 
 const ButtonExample = () => {
