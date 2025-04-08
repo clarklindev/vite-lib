@@ -19,9 +19,25 @@
             "types": "./dist/types/components/index.d.ts",
             "import": "./dist/components/index.js"
         },
-        "./components/*": {
-            "types": "./dist/types/components/*/index.d.ts",
-            "import": "./dist/components/*/index.js"
+        "./context": {
+            "types": "./dist/types/context/index.d.ts",
+            "import": "./dist/context/index.js"
+        },
+        "./customhooks": {
+            "types": "./dist/types/customhooks/index.d.ts",
+            "import": "./dist/customhooks/index.js"
+        },
+        "./themes": {
+            "types": "./dist/types/themes/index.d.ts",
+            "import": "./dist/themes/index.js"
+        },
+        "./types": {
+            "types": "./dist/types/types/index.d.ts",
+            "import": "./dist/types/index.js"
+        },
+        "./utils": {
+            "types": "./dist/types/utils/index.d.ts",
+            "import": "./dist/utils/index.js"
         },
         "./styles.css": "./dist/assets/styles.css"
     },
