@@ -250,12 +250,12 @@ const App = () => {
                 </Card.Content>
             </Card>
 
-            <Card>
+            {/* <Card>
                 <Card.Title>Slider Multi Range</Card.Title>
                 <Card.Content>
                     <SliderMultiRangeExample />
                 </Card.Content>
-            </Card>
+            </Card> */}
 
             <Card>
                 <Card.Title>Snackbar</Card.Title>

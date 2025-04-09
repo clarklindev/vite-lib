@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Orientation } from 'lib/types/Orientation';
-import styles from './Slider.module.css';
 
 type SliderProps = {
     onChange: (value: number, index: number) => void;
@@ -44,7 +43,8 @@ const Slider = ({
     activeColor = 'red',
     trackColor = '#FF000055',
     className = '',
-    style = {}
+    style = {},
+    thumbSize = 30
 }: SliderProps) => {
     const myRef: React.Ref<HTMLDivElement> = useRef(null);
 
@@ -79,7 +79,7 @@ const Slider = ({
         >
             <input
                 type="range"
-                className={[styles.Slider, className].join(' ')}
+                className={[className].join(' ')}
                 onChange={(event) => onChangeHandler(event.target.value, index)}
                 value={value}
                 min={min}
@@ -107,6 +107,28 @@ const Slider = ({
                     background: hideTrack ? 'transparent' : valueGradient || `linear-gradient(90deg, ${activeColor} 0%, ${activeColor} ${value}%, ${trackColor} ${value}%, ${trackColor} 100% )` //   //slider track - value highlight color AND background color - DO NOT REMOVE
                 }}
             />
+            {/* Custom styles for the thumbs */}
+            <style>{`
+                /* Webkit (Chrome, Safari, Edge) */
+                input[type="range"]::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                width: ${thumbSize}px;
+                height: ${thumbSize}px;
+                background: red;
+                border-radius: 50%;
+                cursor: pointer;
+                }
+
+                /* Firefox */
+                input[type="range"]::-moz-range-thumb {
+                -moz-appearance: none;
+                width: ${thumbSize}px;
+                height: ${thumbSize}px;
+                background: red;
+                border-radius: 50%;
+                cursor: pointer;
+                }
+            `}</style>
         </div>
     );
 };
