@@ -1,7 +1,7 @@
-import { Accordion } from '../../../lib/components';
-import { Icon } from '../../../lib/components';
+import { Accordion } from 'lib/components';
+import { Icon } from 'lib/components';
 
-import { ChevronDownIcon, ChevronUpIcon, MinusIcon, PlusIcon } from '../../../lib/icons';
+import { ChevronDownIcon, ChevronUpIcon, MinusIcon, PlusIcon } from 'lib/icons';
 
 const data = [
     {

@@ -9,9 +9,9 @@ const buttonVariants = cva(['box-border', 'inline-flex', 'items-center', 'cursor
         intent: {
             default: '',
             primary: 'bg-black dark:bg-white text-white dark:text-black border-transparent hover:bg-gray-800 dark:hover:bg-gray-300',
-            ['primary-nohover']: 'bg-black dark:bg-white text-white dark:text-black border-transparent dark:hover:bg-gray-300',
-            secondary: 'bg-white text-gray-800 border-gray-400 hover:bg-gray-100',
-            ['secondary-nohover']: 'bg-white text-gray-800 border-gray-400',
+            ['primary-nohover']: 'bg-black dark:bg-white text-white dark:text-black border-transparent',
+            secondary: 'bg-transparent text-current border-gray-400 hover:bg-current/30',
+            ['secondary-nohover']: 'bg-grey-400/50 border-gray-400',
             contained: 'bg-gray-300 text-gray-700 border-gray-300 hover:bg-gray-400',
             ['contained-nohover']: 'bg-gray-300 text-gray-700 border-gray-300',
             outlined: `text-gray-800 dark:text-gray-300 border border-gray-800 dark:border-white bg-transparent hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-white`,

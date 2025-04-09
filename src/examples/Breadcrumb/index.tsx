@@ -1,4 +1,4 @@
-import { Breadcrumb } from '../../../lib/components';
+import { Breadcrumb } from 'lib/components';
 
 //example: https://example.com/products/shoes/nike
 

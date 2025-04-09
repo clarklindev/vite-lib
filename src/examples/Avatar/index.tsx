@@ -1,4 +1,4 @@
-import { Avatar } from '../../../lib/components';
+import { Avatar } from 'lib/components';
 import avatar1 from '../../assets/avatar1.png';
 
 const AvatarExample = () => {

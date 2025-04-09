@@ -2,6 +2,6 @@
 /* https://tailwindcss.com/docs/dark-mode#toggling-dark-mode-manually */
 @custom-variant dark (&:where(.dark, .dark *));
 
-:root {
-  color-scheme: light dark;
+v :root {
+    color-scheme: light dark;
 }
