@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 import { Icon, Label } from 'lib/components';
-import { ChevronRightIcon, ChevronDownIcon } from 'lib/icons';
+import { HiChevronRight as ChevronRightIcon, HiChevronDown as ChevronDownIcon } from 'react-icons/hi2';
 
 interface TreeNodeCommonProps {
     label: string;

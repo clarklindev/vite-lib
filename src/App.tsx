@@ -24,7 +24,7 @@ import RadioButtonExample from './examples/RadioButton';
 import RadioButtonGroupExample from './examples/RadioButtonGroup';
 import SelectExample from './examples/Select';
 import SliderExample from './examples/Slider';
-import SliderMultiRangeExample from './examples/SliderMultiRange';
+// import SliderMultiRangeExample from './examples/SliderMultiRange';
 import SnackbarExample from './examples/Snackbar';
 import SpinnerExample from './examples/Spinner';
 import TableExample from './examples/Table';
@@ -36,7 +36,7 @@ import ToggleSwitchExample from './examples/ToggleSwitch';
 import NavbarExample from './examples/Navbar';
 
 import { Button, Card, Icon, Navbar } from 'lib/components';
-import { ModeLightIcon, ModeDarkIcon } from 'lib/icons';
+import { HiOutlineSun as ModeLightIcon, HiOutlineMoon as ModeDarkIcon } from 'react-icons/hi2';
 import { useTheme } from 'lib/context/ThemeContext';
 import { useEffect } from 'react';
 // import TreeExample from './examples/Tree';

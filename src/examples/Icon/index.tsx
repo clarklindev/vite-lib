@@ -1,5 +1,5 @@
 import { Icon } from 'lib/components';
-import { ShoppingCartIcon } from 'lib/icons';
+import { HiShoppingCart as ShoppingCartIcon } from 'react-icons/hi2';
 
 const IconExample = () => {
     return (

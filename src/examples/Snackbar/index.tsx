@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import { Snackbar, Button, Icon } from 'lib/components';
-import { ClipboardIcon } from 'lib/icons';
+import { HiOutlineClipboardDocument as ClipboardIcon } from 'react-icons/hi2';
 
 const SnackbarExample = () => {
     const [showSnackbar, setShowSnackbar] = useState(false);

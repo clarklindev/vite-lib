@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Input, Button, Icon } from 'lib/components';
-import { MinusIcon, PlusIcon } from 'lib/icons';
+import { HiOutlineMinus as MinusIcon, HiOutlinePlus as PlusIcon } from 'react-icons/hi2';
 
 type CounterProps = {
     savedData: number;

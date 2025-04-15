@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Icon } from 'lib/components';
-import { ChevronDownIcon } from 'lib/icons';
+import { HiChevronDown as ChevronDownIcon } from 'react-icons/hi2';
 
 const Select = ({ children }: { children: React.ReactNode }) => {
     return (

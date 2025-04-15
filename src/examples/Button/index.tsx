@@ -1,5 +1,5 @@
 import { Button, Icon, Label, Layout } from 'lib/components';
-import { ShoppingCartIcon, ThumbsUpIcon } from 'lib/icons';
+import { HiShoppingCart as ShoppingCartIcon, HiOutlineHandThumbUp as ThumbsUpIcon } from 'react-icons/hi2';
 
 const ButtonExample = () => {
     return (

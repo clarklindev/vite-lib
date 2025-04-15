@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronLeftIcon, ChevronRightIcon } from 'lib/icons';
+import { HiChevronLeft as ChevronLeftIcon, HiChevronRight as ChevronRightIcon } from 'react-icons/hi2';
 import { Button, Icon } from 'lib/components';
 
 // Type for Calendar Props

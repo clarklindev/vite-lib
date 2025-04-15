@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Popover, Calendar } from 'lib/components';
-import { CalendarIcon } from 'lib/icons';
+import { HiCalendarDays as CalendarIcon } from 'react-icons/hi2';
 
 const Datepicker = () => {
     const [date, setDate] = useState<Date | null>(null);
