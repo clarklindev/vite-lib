@@ -18,7 +18,7 @@ export * from './Calendar';
 export * from './Datepicker';
 export * from './Dialog';
 export * from './Divider';
-export * from './Dropdown';
+// export * from './Dropdown';
 export * from './InputOtp';
 export * from './List';
 export * from './Pagination';

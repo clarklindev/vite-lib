@@ -27,7 +27,7 @@ const Select = ({ children }: { children: React.ReactNode }) => {
 };
 
 type SelectElementProps = {
-    savedData: any;
+    savedData;
     onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
     children: React.ReactNode[];
 };

@@ -12,13 +12,13 @@ import HeadingExample from './examples/Heading';
 import InputExample from './examples/Input';
 import CounterExample from './examples/Counter';
 import PopoverExample from './examples/Popover';
-import DatepickerExample from './examples/Datepicker';
+// import DatepickerExample from './examples/Datepicker';
 import DialogExample from './examples/Dialog';
 import DividerExample from './examples/Divider';
 import DropdownExample from './examples/Dropdown';
 // import InputOtpExample from './examples/InputOtp';
 import ListExample from './examples/List';
-import PaginationExample from './examples/Pagination';
+// import PaginationExample from './examples/Pagination';
 import ProgressLoaderExample from './examples/ProgressLoader';
 import RadioButtonExample from './examples/RadioButton';
 import RadioButtonGroupExample from './examples/RadioButtonGroup';
@@ -173,12 +173,12 @@ const App = () => {
                 </Card.Content>
             </Card>
 
-            <Card>
+            {/* <Card>
                 <Card.Title>Datepicker</Card.Title>
                 <Card.Content>
                     <DatepickerExample />
                 </Card.Content>
-            </Card>
+            </Card> */}
 
             <Card>
                 <Card.Title>Dialog</Card.Title>

@@ -11,7 +11,7 @@ const DialogExample = () => {
                 Open
             </button>
 
-            <Dialog isOpen={isOpen} onClose={toggleOpen} size="medium" />
+            <Dialog isOpen={isOpen} onClose={toggleOpen} size="medium" className="border border-gray-200" />
         </div>
     );
 };
