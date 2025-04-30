@@ -5,31 +5,24 @@ const ButtonExample = () => {
     return (
         <>
             <Layout>
-                <Button intent="primary">primary</Button>
+                <Button intent="primary" className="hover:bg-red-800 dark:hover:bg-red-300">
+                    primary
+                </Button>
             </Layout>
             <Layout>
-                <Button intent="primary-nohover">primary no-hover</Button>
+                <Button intent="secondary" className="hover:bg-current/30">
+                    secondary
+                </Button>
             </Layout>
             <Layout>
-                <Button intent="secondary">secondary</Button>
+                <Button intent="contained" className="hover:bg-gray-400">
+                    Contained
+                </Button>
             </Layout>
             <Layout>
-                <Button intent="secondary-nohover">secondary no-hover</Button>
-            </Layout>
-
-            <Layout>
-                <Button intent="contained">Contained</Button>
-            </Layout>
-
-            <Layout>
-                <Button intent="contained-nohover">Contained no-hover</Button>
-            </Layout>
-
-            <Layout>
-                <Button intent="outlined">Outlined</Button>
-            </Layout>
-            <Layout>
-                <Button intent="outlined-nohover">Outlined no-hover</Button>
+                <Button intent="outlined" className="hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-white">
+                    Outlined
+                </Button>
             </Layout>
             <Layout>
                 <Button intent="icon">

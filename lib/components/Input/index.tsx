@@ -13,7 +13,6 @@ const InputVariants = cva(
   max-h-12
   px-2
   gap-2
-  bg-[var(--input-background-color)]
   overflow-hidden`,
     {
         variants: {

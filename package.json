@@ -104,6 +104,9 @@
         "tailwindcss": "^4.1.1"
     },
     "pnpm": {
-        "overrides": {}
+        "overrides": {},
+        "onlyBuiltDependencies": [
+            "esbuild"
+        ]
     }
 }

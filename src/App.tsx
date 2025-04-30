@@ -2,7 +2,7 @@ import './App.css';
 import AccordionExample from './examples/Accordion';
 import AvatarExample from './examples/Avatar';
 import ButtonExample from './examples/Button';
-import CalendarExample from './examples/Calendar';
+// import CalendarExample from './examples/Calendar';
 import CardExample from './examples/Card';
 import IconExample from './examples/Icon';
 // import BreadcrumbExample from './examples/Breadcrumb';
@@ -16,7 +16,7 @@ import DatepickerExample from './examples/Datepicker';
 import DialogExample from './examples/Dialog';
 import DividerExample from './examples/Divider';
 import DropdownExample from './examples/Dropdown';
-import InputOtpExample from './examples/InputOtp';
+// import InputOtpExample from './examples/InputOtp';
 import ListExample from './examples/List';
 import PaginationExample from './examples/Pagination';
 import ProgressLoaderExample from './examples/ProgressLoader';
@@ -58,13 +58,13 @@ const App = () => {
 
                     <Navbar.GroupRight>
                         {colorScheme === 'dark' ? (
-                            <Button intent="outlined-nohover" padding="S" onClick={() => setColorScheme('light')}>
+                            <Button intent="outlined" padding="S" onClick={() => setColorScheme('light')}>
                                 <Icon size="L">
                                     <ModeLightIcon />
                                 </Icon>
                             </Button>
                         ) : (
-                            <Button intent="outlined-nohover" padding="S" onClick={() => setColorScheme('dark')}>
+                            <Button intent="outlined" padding="S" onClick={() => setColorScheme('dark')}>
                                 <Icon size="L">
                                     <ModeDarkIcon />
                                 </Icon>
@@ -110,12 +110,12 @@ const App = () => {
                 </Card.Content>
             </Card>
 
-            <Card>
+            {/* <Card>
                 <Card.Title>Calendar</Card.Title>
                 <Card.Content>
                     <CalendarExample />
                 </Card.Content>
-            </Card>
+            </Card> */}
 
             <Card>
                 <Card.Title>Checkbox</Card.Title>
@@ -145,10 +145,17 @@ const App = () => {
                 </Card.Content>
             </Card>
 
-            <Card>
+            {/* <Card>
                 <Card.Title>Input OTP</Card.Title>
                 <Card.Content>
                     <InputOtpExample />
+                </Card.Content>
+            </Card> */}
+
+            <Card>
+                <Card.Title>Select</Card.Title>
+                <Card.Content>
+                    <SelectExample />
                 </Card.Content>
             </Card>
 
@@ -207,13 +214,13 @@ const App = () => {
                     <NavbarExample />
                 </Card.Content>
             </Card>
-
+            {/* 
             <Card>
                 <Card.Title>Pagination</Card.Title>
                 <Card.Content>
                     <PaginationExample />
                 </Card.Content>
-            </Card>
+            </Card> */}
 
             <Card>
                 <Card.Title>Progress loader</Card.Title>
@@ -233,13 +240,6 @@ const App = () => {
                 <Card.Title>Radio Button Group</Card.Title>
                 <Card.Content>
                     <RadioButtonGroupExample />
-                </Card.Content>
-            </Card>
-
-            <Card>
-                <Card.Title>Select</Card.Title>
-                <Card.Content>
-                    <SelectExample />
                 </Card.Content>
             </Card>
 

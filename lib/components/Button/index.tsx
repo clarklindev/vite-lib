@@ -2,20 +2,16 @@ import { forwardRef } from 'react';
 import type { ButtonHTMLAttributes } from 'react';
 
 import { cva, type VariantProps } from 'class-variance-authority';
-import { twMerge } from 'tailwind-merge';
+import { cn } from 'lib/utils';
 
 const buttonVariants = cva(['box-border', 'inline-flex', 'items-center', 'cursor-pointer'], {
     variants: {
         intent: {
             default: '',
-            primary: 'bg-black dark:bg-white text-white dark:text-black border-transparent hover:bg-gray-800 dark:hover:bg-gray-300',
-            ['primary-nohover']: 'bg-black dark:bg-white text-white dark:text-black border-transparent',
-            secondary: 'bg-transparent text-current border-gray-400 hover:bg-current/30',
-            ['secondary-nohover']: 'bg-grey-400/50 border-gray-400',
-            contained: 'bg-gray-300 text-gray-700 border-gray-300 hover:bg-gray-400',
-            ['contained-nohover']: 'bg-gray-300 text-gray-700 border-gray-300',
-            outlined: `text-gray-800 dark:text-gray-300 border border-gray-800 dark:border-white bg-transparent hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-white`,
-            ['outlined-nohover']: `text-gray-800 dark:text-gray-300 border border-gray-800 dark:border-white bg-transparent`,
+            primary: 'bg-black dark:bg-white text-white dark:text-black border-transparent',
+            secondary: 'bg-transparent text-current border-gray-400',
+            contained: 'bg-gray-300 text-gray-700 border-gray-300',
+            outlined: `text-gray-800 dark:text-gray-300 border border-gray-800 dark:border-white bg-transparent `,
             plain: 'border-transparent outline-none ring-transparent',
             text: 'border-transparent underline',
             icon: 'border-transparent'
@@ -63,13 +59,13 @@ const buttonVariants = cva(['box-border', 'inline-flex', 'items-center', 'cursor
     }
 });
 
-export interface ButtonVariants extends VariantProps<typeof buttonVariants> {}
+export type ButtonVariants = VariantProps<typeof buttonVariants>;
 export interface ButtonProps extends ButtonVariants, Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'color'> {} // omit 'color' if you use it in your variants
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
     const { intent = 'primary', padding, fontsize, focus, className, borderRadius, onClick, onFocus, onBlur, children, ...rest } = props;
 
-    const classes = twMerge(buttonVariants({ intent, fontsize, padding, focus, borderRadius }), className);
+    const classes = cn(buttonVariants({ intent, fontsize, padding, focus, borderRadius }), className);
 
     return (
         <button

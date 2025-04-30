@@ -14,11 +14,11 @@ const Select = ({ children }: { children: React.ReactNode }) => {
       rounded-md
       w-full 
       items-center 
-      min-w-180  
+      min-w-180
+      min-h-12    
       h-[var(--input-height)] 
       border 
       border-[var(--border-color)]
-      bg-[var(--input-background-color)] 
       `}
         >
             {children}
@@ -38,17 +38,16 @@ const SelectElement = (props: SelectElementProps) => {
     return (
         <select
             className={`
-      box-border   
-      appearance-none  
-      m-0  
-      w-full  
-      h-full  
-      outline-none  
-      cursor-pointer  
-      bg-transparent  
-      px-2  
-      text-[var(--input-text-color)] 
-      
+                appearance-none         
+                rounded-md
+                
+                box-border   
+                m-0  
+                w-full  
+                h-full  
+                outline-none  
+                cursor-pointer  
+                px-2  
       `}
             value={savedData}
             onChange={(event: React.ChangeEvent<HTMLSelectElement>) => onChange(event)}
@@ -64,7 +63,12 @@ const SelectElement = (props: SelectElementProps) => {
 
 const SelectOption = ({ children, value }: { children: React.ReactNode; value: string }) => {
     return (
-        <option className="bg-[var(--input-background-color)] text-[var(--text)]" value={value}>
+        <option
+            className={`
+                dark:bg-black		
+                dark:text-white`}
+            value={value}
+        >
             {children}
         </option>
     );

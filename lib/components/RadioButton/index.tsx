@@ -57,7 +57,7 @@ cursor-pointer
 rounded-full
 border-[var(--border)]
 bg-gray-400/50
-      `} // bg-[var(input-background-color)]
+      `}
             >
                 <Icon size={size}>
                     {checked ? (

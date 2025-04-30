@@ -47,8 +47,6 @@ const Checkbox = ({ checked, name, label = '', onChange, size = 'XL', indetermin
                     cursor-pointer
                     overflow-hidden 
                     rounded-md
-                    bg-[var(--clr-background)]
-                    bg-[var(input-background-color)]
                 `}
             >
                 {indeterminate ? (
