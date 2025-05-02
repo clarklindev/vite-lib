@@ -1,16 +1,12 @@
 import { createContext, useContext, useReducer, useEffect } from 'react';
 
-export const actionTypes = {
+const actionTypes = {
     COLORSCHEME: 'color-scheme' //context
-};
-
-const getSystemPreference = () => {
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 };
 
 const getInitialColorScheme = () => {
     const savedScheme = localStorage.getItem('colorScheme');
-    return savedScheme || getSystemPreference();
+    return savedScheme || window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 };
 
 const initialState = {
@@ -18,6 +14,7 @@ const initialState = {
 };
 
 const exposedFunction = {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     setColorScheme: (_: string) => {}
 };
 
@@ -82,6 +79,7 @@ export function ThemeContextProvider({ children }) {
     );
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useTheme = () => {
     const context = useContext(ThemeContext); //pass the shell context
     if (!context) {
