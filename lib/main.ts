@@ -21,7 +21,6 @@ export { Calendar } from 'lib/components/Calendar';
 export { Datepicker } from 'lib/components/Datepicker';
 export { Dialog } from 'lib/components/Dialog';
 export { Divider } from 'lib/components/Divider';
-export { Dropdown } from 'lib/components/Dropdown';
 export { InputOtp } from 'lib/components/InputOtp';
 export { List } from 'lib/components/List';
 export { Pagination } from 'lib/components/Pagination';

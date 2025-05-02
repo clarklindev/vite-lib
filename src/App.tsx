@@ -50,7 +50,7 @@ const App = () => {
 
     return (
         <>
-            <div>
+            <div className="bg-white dark:bg-black">
                 <Navbar>
                     <Navbar.GroupLeft>
                         <h1 className="text-3xl bg-red-500 font-bold underline">Vite-lib</h1>
@@ -60,13 +60,13 @@ const App = () => {
                         {colorScheme === 'dark' ? (
                             <Button intent="outlined" padding="S" onClick={() => setColorScheme('light')}>
                                 <Icon size="L">
-                                    <ModeLightIcon />
+                                    <ModeDarkIcon />
                                 </Icon>
                             </Button>
                         ) : (
                             <Button intent="outlined" padding="S" onClick={() => setColorScheme('dark')}>
                                 <Icon size="L">
-                                    <ModeDarkIcon />
+                                    <ModeLightIcon />
                                 </Icon>
                             </Button>
                         )}

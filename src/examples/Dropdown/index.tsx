@@ -6,7 +6,7 @@ const DropdownExample = () => {
     return (
         <Menu as="div" className="relative inline-block text-left">
             <div>
-                <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white dark:bg-black px-3 py-2 text-sm font-semibold text-gray-900 dark:text-gray-100 shadow-xs ring-1 ring-gray-300 ring-inset">
+                <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white dark:bg-black px-3 py-2 text-sm font-semibold text-gray-600 dark:text-gray-200 shadow-xs ring-1 ring-gray-300 ring-inset">
                     Options
                     <ChevronDownIcon aria-hidden="true" className="-mr-1 size-5 text-gray-400" />
                 </MenuButton>
