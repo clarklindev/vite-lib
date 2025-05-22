@@ -14,7 +14,6 @@ const Select = ({ children }: { children: React.ReactNode }) => {
       rounded-md
       w-full 
       items-center 
-      min-w-180
       min-h-12    
       h-[var(--input-height)] 
       border 
