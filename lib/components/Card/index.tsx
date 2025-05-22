@@ -4,7 +4,7 @@ import { Divider, Heading } from 'lib/components';
 
 type CardProps = React.HTMLProps<HTMLDivElement> & {
     children?: React.ReactNode;
-    heading?: string
+    heading?: string;
 };
 
 const Card = ({ className, children }: CardProps) => {
@@ -15,32 +15,29 @@ const Card = ({ className, children }: CardProps) => {
     );
 };
 
-const title = ({children, className}: {children:string, className?:string})=>{
-    return (<div className="flex flex-col justify-center">
-        <Heading variation="h1" size="XS" className={cn('py-2 px-2', className)}>
-            {children}
-        </Heading>
-        <Divider/>
-    </div>
-    )
-}
+const title = ({ children, className }: { children: string; className?: string }) => {
+    return (
+        <div className="flex flex-col justify-center">
+            <Heading as="h1" className={cn('text-xl py-2 px-2', className)}>
+                {children}
+            </Heading>
+            <Divider />
+        </div>
+    );
+};
 
-
-const cardContent = ({children, className}:{className?:string, children:React.ReactElement | string})=>{
-    return <div className={cn('px-2 py-2', className)}>
-        {children}
-    </div>
-}
+const cardContent = ({ children, className }: { className?: string; children: React.ReactElement | string }) => {
+    return <div className={cn('px-2 py-2', className)}>{children}</div>;
+};
 
 Card.Title = title;
-title.displayName = "Card.Title";
+title.displayName = 'Card.Title';
 
 Card.Content = cardContent;
-cardContent.displayName = "Card.Content";
+cardContent.displayName = 'Card.Content';
 
 Card.displayName = 'Card';
 export { Card };
-
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------
 // Card is a div tag so we use data-component="Card" to differentiate it from classes which will become random generated characters

@@ -1,83 +1,87 @@
 import { useState } from 'react';
-import { Heading, Layout, CheckboxGroup, Checkbox, Label } from 'lib/components';
+import { Checkbox, Label, Layout, Heading } from 'lib/components';
 
-const CheckboxGroupExample = () => {
+// import Code from './code.mdx';
+
+const CheckboxExample = () => {
     const options = [
         { label: 'A', value: 'a' },
         { label: 'B', value: 'b' },
         { label: 'C', value: 'c' }
     ];
-    const [savedData, updateSavedData] = useState(Array(options.length).fill(false));
+    const [savedDataA, updateSavedDataA] = useState(Array(options.length).fill(false));
+    const [savedDataB, updateSavedDataB] = useState(Array(options.length).fill(false));
+    const [savedDataC, updateSavedDataC] = useState(Array(options.length).fill(false));
 
-    const onChange = (index: number, newValue: boolean) => {
+    const onChange = (savedData: Array<boolean>, updateSavedData, index: number) => {
         const newValues = [...savedData];
-        newValues[index] = newValue;
+        newValues[index] = !newValues[index];
         updateSavedData(newValues);
     };
 
     return (
         <>
             <Layout>
-                <Heading variation="h5" size="level2">
+                <Heading as="h5" className="font-xl">
                     Checkbox Group (horizontal)
                 </Heading>
 
-                <CheckboxGroup direction="row" spacing="4">
+                <div className="flex flex-row space-x-5">
                     {options.map((each, index) => {
                         return (
-                            <Label key={'CheckboxGroup_Checkbox' + index} label={each.label} labelDirection="bottom" gap="2">
-                                <Checkbox checked={savedData[index]} name="Checkbox_ABC" onChange={() => onChange(index, !savedData[index])} />
+                            <Label key={'CheckboxGroup_CheckboxA' + index} label={each.label} labelDirection="bottom" gap="2">
+                                <Checkbox checked={savedDataA[index]} name="Checkbox_A" onChange={() => onChange(savedDataA, updateSavedDataA, index)} />
                             </Label>
                         );
                     })}
-                </CheckboxGroup>
+                </div>
             </Layout>
 
             <Layout>
-                <Heading variation="h5" size="level2">
+                <Heading as="h5" className="font-xl">
                     Checkbox Group (vertical)
                 </Heading>
-                <CheckboxGroup direction="column" spacing="4">
+                <div className="flex flex-col space-y-5">
                     {options.map((each, index) => {
                         return (
-                            <Label key={'CheckboxGroup_Checkbox' + index} label={each.label} labelDirection="right" gap="2">
-                                <Checkbox checked={savedData[index]} name="Checkbox_ABC" onChange={() => onChange(index, !savedData[index])} />
+                            <Label key={'CheckboxGroup_CheckboxB' + index} label={each.label} labelDirection="right" gap="2">
+                                <Checkbox checked={savedDataB[index]} name="Checkbox_B" onChange={() => onChange(savedDataB, updateSavedDataB, index)} />
                             </Label>
                         );
                     })}
-                </CheckboxGroup>
+                </div>
             </Layout>
 
             <Layout>
-                <Heading variation="h5" size="level2">
+                <Heading as="h5" className="font-xl">
                     Checkbox Group (indeterminate)
                 </Heading>
                 <div className="flex flex-col items-start space-y-10">
                     <Label label="hi" labelDirection="right" gap="2">
                         <Checkbox
-                            checked={savedData.every((item) => item === true)}
-                            indeterminate={!savedData.every((item) => item === true) && savedData.some((item) => item === true)}
+                            checked={savedDataC.every((item) => item === true)}
+                            indeterminate={!savedDataC.every((item) => item === true) && savedDataC.some((item) => item === true)}
                             name="checkbox"
                             onChange={(event) => {
                                 //update group
-                                updateSavedData(savedData.slice().fill(event.target.checked));
+                                updateSavedDataC(savedDataC.slice().fill(event.target.checked));
                             }}
                         />
                     </Label>
 
-                    <CheckboxGroup direction="column" spacing="4">
+                    <div className="flex flex-col spacing-y-5">
                         {options.map((each, index) => {
                             return (
-                                <Label key={'CheckboxGroup_Checkbox' + index} label={each.label} labelDirection="right" gap="2">
-                                    <Checkbox checked={savedData[index]} name="Checkbox_ABC" onChange={() => onChange(index, !savedData[index])} />
+                                <Label key={'CheckboxGroup_CheckboxC' + index} label={each.label} labelDirection="right" gap="2">
+                                    <Checkbox checked={savedDataC[index]} name="Checkbox_ABC" onChange={() => onChange(savedDataC, updateSavedDataC, index)} />
                                 </Label>
                             );
                         })}
-                    </CheckboxGroup>
+                    </div>
                 </div>
             </Layout>
         </>
     );
 };
 
-export default CheckboxGroupExample;
+export default CheckboxExample;
