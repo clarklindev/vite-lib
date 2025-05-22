@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import path from 'path';
 
-import { extname, relative, resolve } from 'path';
+import { extname, relative } from 'path';
 import { fileURLToPath } from 'node:url';
 import { glob } from 'glob';
 import tailwindcss from '@tailwindcss/vite';
