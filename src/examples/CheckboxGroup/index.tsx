@@ -13,7 +13,7 @@ const CheckboxExample = () => {
     const [savedDataB, updateSavedDataB] = useState(Array(options.length).fill(false));
     const [savedDataC, updateSavedDataC] = useState(Array(options.length).fill(false));
 
-    const onChange = (savedData: Array<boolean>, updateSavedData, index: number) => {
+    const onChange = (savedData: Array<boolean>, updateSavedData: (newData: Array<boolean>) => void, index: number) => {
         const newValues = [...savedData];
         newValues[index] = !newValues[index];
         updateSavedData(newValues);

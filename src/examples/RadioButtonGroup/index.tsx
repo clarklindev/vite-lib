@@ -14,7 +14,7 @@ const RadioButtonGroupExample = () => {
     const [savedDataA, updateSavedDataA] = useState(Array(options.length).fill(false));
     const [savedDataB, updateSavedDataB] = useState(Array(options.length).fill(false));
 
-    const onChange = (savedData: Array<boolean>, updateSavedData, index: number) => {
+    const onChange = (savedData: Array<boolean>, updateSavedData: (newData: Array<boolean>) => void, index: number) => {
         const newValues = [...savedData].fill(false);
         newValues[index] = true;
         updateSavedData(newValues);
