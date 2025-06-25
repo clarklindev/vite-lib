@@ -12,6 +12,7 @@ export * from './Heading';
 export * from './Layout';
 export * from './Checkbox';
 export * from './Counter';
+export * from './CodeBlock';
 export * from './Popover';
 export * from './Calendar';
 export * from './Datepicker';

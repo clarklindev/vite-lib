@@ -15,6 +15,7 @@ export { Heading } from 'lib/components/Heading';
 export { Layout } from 'lib/components/Layout';
 export { Checkbox } from 'lib/components/Checkbox';
 export { Counter } from 'lib/components/Counter';
+export { CodeBlock } from 'lib/components/CodeBlock';
 export { Popover } from 'lib/components/Popover';
 export { Calendar } from 'lib/components/Calendar';
 export { Datepicker } from 'lib/components/Datepicker';
