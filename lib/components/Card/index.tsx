@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import React from 'react';
 import { cn } from 'lib/utils/cn';
 import { Divider, Heading } from 'lib/components';
@@ -15,7 +16,12 @@ const Card = ({ className, children }: CardProps) => {
     );
 };
 
-const title = ({ children, className }: { children: string; className?: string }) => {
+type TitleProps = {
+    children: ReactNode;
+    className?: string;
+};
+
+const title = ({ children, className }: TitleProps) => {
     return (
         <div className="flex flex-col justify-center">
             <Heading as="h1" className={cn('text-xl py-2 px-2', className)}>
