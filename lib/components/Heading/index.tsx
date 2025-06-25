@@ -20,4 +20,4 @@ const Heading: React.FC<HeadingProps> = ({ as, className = '', children, ...rest
     );
 };
 
-export { Heading };
+export { Heading, type HeadingProps };
