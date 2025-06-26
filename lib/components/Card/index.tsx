@@ -1,6 +1,5 @@
 import type { ReactNode } from 'react';
 import React from 'react';
-import { cn } from 'lib/utils/cn';
 import { Divider } from 'lib/components';
 
 type CardProps = React.HTMLProps<HTMLDivElement> & {
