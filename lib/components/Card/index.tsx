@@ -25,7 +25,7 @@ const title = ({ children, className }: TitleProps) => {
     );
 };
 
-const cardContent = ({ children, className }: { className?: string; children: React.ReactElement | string }) => {
+const cardContent = ({ children, className }: { className?: string; children: React.ReactNode }) => {
     return <div className={['py-2 px-2', className].filter(Boolean).join(' ')}>{children}</div>;
 };
 
