@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import React from 'react';
 import { cn } from 'lib/utils/cn';
-import { Divider, Heading } from 'lib/components';
+import { Divider } from 'lib/components';
 
 type CardProps = React.HTMLProps<HTMLDivElement> & {
     children?: React.ReactNode;
@@ -24,9 +24,7 @@ type TitleProps = {
 const title = ({ children, className }: TitleProps) => {
     return (
         <div className="flex flex-col justify-center">
-            <Heading as="h1" className={cn('text-xl py-2 px-2', className)}>
-                {children}
-            </Heading>
+            <div className={cn('text-xl py-2 px-2', className)}>{children}</div>
             <Divider />
         </div>
     );
