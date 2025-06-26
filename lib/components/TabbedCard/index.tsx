@@ -6,13 +6,13 @@ const TabbedCard = ({ componentName, children }: { componentName: string; childr
         <Tabs>
             <Card className="mt-2">
                 <Card.Title>
-                    <>
+                    <div className="flex justify-between">
                         {componentName}
                         <Tabs.TriggerGroup>
                             <Tabs.Trigger data-tab="0">PREVIEW</Tabs.Trigger>
                             <Tabs.Trigger data-tab="1">CODE</Tabs.Trigger>
                         </Tabs.TriggerGroup>
-                    </>
+                    </div>
                 </Card.Title>
                 <Card.Content>
                     <Tabs.ContentGroup>{children}</Tabs.ContentGroup>
@@ -34,7 +34,7 @@ const Code = ({ children }: { children: React.ReactNode }) => {
     return (
         <Tabs.Content data-tab="1">
             <CodeBlock>
-                <div className="px-2 py-2">{children}</div>
+                <div className="px-2 py-2 prose w-full break-words">{children}</div>
             </CodeBlock>
         </Tabs.Content>
     );
