@@ -9,11 +9,7 @@ type CardProps = React.HTMLProps<HTMLDivElement> & {
 };
 
 const Card = ({ className, children }: CardProps) => {
-    return (
-        <div data-component={Card.displayName} className={cn('border border-gray-400/50 rounded-lg min-h-auto mb-4', className)}>
-            {children}
-        </div>
-    );
+    return <div className={['border border-gray-400/50 rounded-lg min-h-auto mb-4', className].filter(Boolean).join(' ')}>{children}</div>;
 };
 
 type TitleProps = {
@@ -24,14 +20,14 @@ type TitleProps = {
 const title = ({ children, className }: TitleProps) => {
     return (
         <div className="flex flex-col justify-center">
-            <div className={cn('text-xl py-2 px-2', className)}>{children}</div>
+            <div className={['text-xl py-2 px-2', className].filter(Boolean).join(' ')}>{children}</div>
             <Divider />
         </div>
     );
 };
 
 const cardContent = ({ children, className }: { className?: string; children: React.ReactElement | string }) => {
-    return <div className={cn('px-2 py-2', className)}>{children}</div>;
+    return <div className={['py-2 px-2', className].filter(Boolean).join(' ')}>{children}</div>;
 };
 
 Card.Title = title;
