@@ -16,16 +16,16 @@ git commit -m ""
 git push
 ```
 
+## version patch
+
+```sh
+npm version patch
+```
+
 ## build
 
 ```sh
 npm run build
-```
-
-## patch version
-
-```sh
-npm patch version
 ```
 
 ## publish
