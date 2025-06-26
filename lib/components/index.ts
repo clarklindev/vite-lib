@@ -31,6 +31,7 @@ export * from './Snackbar';
 export * from './Spinner';
 export * from './Table';
 export * from './Tabs';
+export * from './TabbedCard';
 export * from './Text';
 export * from './Textarea';
 export * from './ToggleButton';
