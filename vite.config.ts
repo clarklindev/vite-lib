@@ -27,6 +27,9 @@ export default defineConfig({
             rollupTypes: true
         })
     ],
+    optimizeDeps: {
+        include: ['@mankindui/core/components']
+    },
     build: {
         copyPublicDir: false,
         sourcemap: true,
@@ -52,9 +55,10 @@ export default defineConfig({
             output: {
                 assetFileNames: 'assets/[name][extname]',
                 entryFileNames: '[name].js',
-                preserveModules: true, // ✅ Keeps folder structure intact in dist/
-                preserveModulesRoot: 'lib' // ✅ Ensures folder paths match `lib/`
-            }
+                preserveModules: true,
+                preserveModulesRoot: 'lib'
+            },
+            treeshake: false
         }
     }
 });

@@ -45,7 +45,8 @@
         "dist"
     ],
     "sideEffects": [
-        "**/*.css"
+        "**/*.css",
+        "./dist/components/index.js"
     ],
     "publishConfig": {
         "access": "public"
