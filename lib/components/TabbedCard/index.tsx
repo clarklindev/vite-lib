@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Tabs, CodeBlock, Heading } from 'lib/components';
+import { Card, Tabs, CodeBlock } from 'lib/components';
 
 const TabbedCard = ({ componentName, children }: { componentName: string; children: React.ReactNode }) => {
     return (
@@ -7,13 +7,11 @@ const TabbedCard = ({ componentName, children }: { componentName: string; childr
             <Card className="mt-2">
                 <Card.Title>
                     <>
-                        <Heading as="h1" className="flex justify-between prose w-full break-words">
-                            {componentName}
-                            <Tabs.TriggerGroup>
-                                <Tabs.Trigger data-tab="0">PREVIEW</Tabs.Trigger>
-                                <Tabs.Trigger data-tab="1">CODE</Tabs.Trigger>
-                            </Tabs.TriggerGroup>
-                        </Heading>
+                        {componentName}
+                        <Tabs.TriggerGroup>
+                            <Tabs.Trigger data-tab="0">PREVIEW</Tabs.Trigger>
+                            <Tabs.Trigger data-tab="1">CODE</Tabs.Trigger>
+                        </Tabs.TriggerGroup>
                     </>
                 </Card.Title>
                 <Card.Content>
