@@ -10,9 +10,11 @@ interface CodeBlockProps {
     editable?: boolean;
     children?: string | React.ReactNode | undefined;
     showClipboardIcon?: boolean;
+    darkIcon?: string;
+    lightIcon?: string;
 }
 
-const CodeBlock = ({ children, showClipboardIcon = true }: CodeBlockProps) => {
+const CodeBlock = ({ children, showClipboardIcon = true, darkIcon = 'black', lightIcon = 'white' }: CodeBlockProps) => {
     const [hasCopied, setHasCopied] = useState(false);
     const { colorScheme } = useTheme();
 
@@ -62,9 +64,9 @@ const CodeBlock = ({ children, showClipboardIcon = true }: CodeBlockProps) => {
             <Button intent="icon" className="absolute top-0 right-0 p-2" onClick={handleClick}>
                 <Icon size="M">
                     {hasCopied ? (
-                        <ClipboardCheckIcon stroke={colorScheme === 'dark' ? 'white' : 'black'} />
+                        <ClipboardCheckIcon stroke={colorScheme === 'dark' ? lightIcon : darkIcon} />
                     ) : (
-                        showClipboardIcon && <ClipboardIcon stroke={colorScheme === 'dark' ? 'white' : 'black'} />
+                        showClipboardIcon && <ClipboardIcon stroke={colorScheme === 'dark' ? lightIcon : darkIcon} />
                     )}
                 </Icon>
             </Button>
