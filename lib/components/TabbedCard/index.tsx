@@ -30,10 +30,10 @@ const Preview = ({ children, className }: { children: React.ReactNode; className
     );
 };
 
-const Code = ({ children }: { children: React.ReactNode }) => {
+const Code = ({ children, darkIcon = 'white', lightIcon = 'white' }: { children: React.ReactNode; darkIcon: string; lightIcon: string }) => {
     return (
         <Tabs.Content data-tab="1">
-            <CodeBlock>
+            <CodeBlock darkIcon={darkIcon} lightIcon={lightIcon}>
                 <div className="px-2 py-2 prose w-full break-words">{children}</div>
             </CodeBlock>
         </Tabs.Content>
