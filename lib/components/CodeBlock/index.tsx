@@ -56,7 +56,7 @@ const CodeBlock = ({ children, showClipboardIcon = true }: CodeBlockProps) => {
     };
 
     return (
-        <div className="w-full min-h-10 relative">
+        <div className="w-full min-h-10 flex items-center relative">
             <Button intent="icon" className="absolute top-0 right-0 p-2" onClick={handleClick}>
                 <Icon size="M">{hasCopied ? <ClipboardCheckIcon stroke="white" /> : showClipboardIcon && <ClipboardIcon stroke="white" />}</Icon>
             </Button>
