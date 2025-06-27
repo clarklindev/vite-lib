@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from '../Button';
 import { ClipboardIcon, ClipboardCheckIcon } from '../../icons';
-
+import { useTheme } from '../../context/';
 import { Icon } from '../Icon';
 import ReactDOMServer from 'react-dom/server';
 
@@ -14,6 +14,8 @@ interface CodeBlockProps {
 
 const CodeBlock = ({ children, showClipboardIcon = true }: CodeBlockProps) => {
     const [hasCopied, setHasCopied] = useState(false);
+    const { colorScheme } = useTheme();
+
     const showCopiedIconThenReset = () => {
         setHasCopied(true);
 
@@ -58,7 +60,13 @@ const CodeBlock = ({ children, showClipboardIcon = true }: CodeBlockProps) => {
     return (
         <div className="w-full min-h-10 flex items-center relative">
             <Button intent="icon" className="absolute top-0 right-0 p-2" onClick={handleClick}>
-                <Icon size="M">{hasCopied ? <ClipboardCheckIcon stroke="white" /> : showClipboardIcon && <ClipboardIcon stroke="white" />}</Icon>
+                <Icon size="M">
+                    {hasCopied ? (
+                        <ClipboardCheckIcon stroke={colorScheme === 'dark' ? 'white' : 'black'} />
+                    ) : (
+                        showClipboardIcon && <ClipboardIcon stroke={colorScheme === 'dark' ? 'white' : 'black'} />
+                    )}
+                </Icon>
             </Button>
             {children}
         </div>
