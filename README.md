@@ -46,3 +46,4 @@ npm create vite@latest
 
 -   NOTE: @mankindui/core supports the `react framework`
 -   when creating project -> select a variant, choose: `typescript`
+-   because Tailwindcss is a dependency, you should install tailwindcss in your own project [see tailwind - Using Vite](https://tailwindcss.com/docs/installation/using-vite)
