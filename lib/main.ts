@@ -31,7 +31,7 @@ export { Slider } from 'lib/components/Slider';
 export { SliderMultiRange } from 'lib/components/SliderMultiRange';
 export { Snackbar } from 'lib/components/Snackbar';
 export { Spinner } from 'lib/components/Spinner';
-export { Table } from 'lib/components/Table';
+export { Table, type Header } from 'lib/components/Table';
 export { Tabs } from 'lib/components/Tabs';
 export { TabbedCard } from 'lib/components/TabbedCard';
 export { Text } from 'lib/components/Text';

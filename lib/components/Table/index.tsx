@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 type Align = 'left' | 'right' | 'center' | 'justify' | undefined;
 
-export type Header = {
+type Header = {
     width: string;
     alignHeader?: Align;
     alignContent?: Align;
@@ -79,4 +79,4 @@ const Table = ({ headers, data, configure }: TableProps) => {
 };
 
 Table.displayName = 'Table';
-export { Table };
+export { Table, type Header };
