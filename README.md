@@ -33,3 +33,14 @@ npm run build
 ```sh
 npm publish --access public
 ```
+
+# how to use this library
+
+-   create a vite project
+
+```
+npm create vite@latest
+```
+
+-   NOTE: @mankindui/core supports the `react framework`
+-   when creating project -> select a variant, choose: `typescript`
