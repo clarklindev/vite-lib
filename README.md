@@ -34,6 +34,8 @@ npm run build
 npm publish --access public
 ```
 
+---
+
 # how to use this library
 
 -   create a vite project
