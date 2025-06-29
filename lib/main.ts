@@ -11,7 +11,7 @@ export { Accordion } from 'lib/components/Accordion';
 export { Avatar } from 'lib/components/Avatar';
 export { Badge } from 'lib/components/Badge';
 export { Breadcrumb } from 'lib/components/Breadcrumb';
-export { Heading } from 'lib/components/Heading';
+export { Heading, type HeadingProps } from 'lib/components/Heading';
 export { Layout } from 'lib/components/Layout';
 export { Checkbox } from 'lib/components/Checkbox';
 export { Counter } from 'lib/components/Counter';
