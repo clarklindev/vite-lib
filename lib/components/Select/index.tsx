@@ -39,7 +39,7 @@ const SelectElement = (props: SelectElementProps) => {
             className={`
                 appearance-none         
                 rounded-md
-                
+                border-gray-400/50
                 box-border   
                 m-0  
                 w-full  
