@@ -42,7 +42,7 @@ const SelectElement = (props: SelectElementProps) => {
                 
                 box-border   
                 m-0  
-                w-fit  
+                w-full  
                 h-full  
                 outline-none  
                 cursor-pointer  
