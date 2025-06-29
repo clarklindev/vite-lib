@@ -64,7 +64,7 @@
     ],
     "license": "MIT",
     "scripts": {
-        "dev": "vite",
+        "dev": "npx vite",
         "build": "tsc -b ./tsconfig.lib.json && vite build",
         "lint": "eslint .",
         "preview": "vite preview",
