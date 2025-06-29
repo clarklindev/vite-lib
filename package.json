@@ -68,7 +68,9 @@
         "build": "tsc -b ./tsconfig.lib.json && vite build",
         "lint": "eslint .",
         "preview": "vite preview",
-        "prepublishOnly": "npm run build"
+        "prepublishOnly": "npm run build",
+        "storybook": "storybook dev -p 6006",
+        "build-storybook": "storybook build"
     },
     "peerDependencies": {
         "react": "^19.1.0",
@@ -92,7 +94,16 @@
         "typescript-eslint": "^8.24.1",
         "vite": "^6.2.0",
         "vite-plugin-dts": "^4.5.3",
-        "vite-plugin-lib-inject-css": "^2.2.1"
+        "vite-plugin-lib-inject-css": "^2.2.1",
+        "@storybook/addon-essentials": "^8.4.7",
+        "@storybook/addon-interactions": "^8.4.7",
+        "@storybook/addon-links": "^8.4.7",
+        "@storybook/addon-onboarding": "^8.4.7",
+        "@storybook/blocks": "^8.4.7",
+        "@storybook/react": "^8.4.7",
+        "@storybook/react-vite": "^8.4.7",
+        "@storybook/test": "^8.4.7",
+        "storybook": "^8.4.7"
     },
     "dependencies": {
         "@headlessui/react": "^2.2.2",
