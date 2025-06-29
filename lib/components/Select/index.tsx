@@ -17,7 +17,7 @@ const Select = ({ children }: { children: React.ReactNode }) => {
       min-h-12    
       h-[var(--input-height)] 
       border 
-      border-[var(--border-color)]
+      border-gray-400/50
       `}
         >
             {children}
@@ -39,7 +39,6 @@ const SelectElement = (props: SelectElementProps) => {
             className={`
                 appearance-none         
                 rounded-md
-                border-gray-400/50
                 box-border   
                 m-0  
                 w-full  
