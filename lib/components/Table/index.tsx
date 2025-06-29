@@ -47,7 +47,7 @@ const Table = ({ headers, data, configure }: TableProps) => {
     const columns = headers.map((each) => each.width).join(' ');
     console.log('columns: ', columns);
     return (
-        <TableContainer className="border" gridTemplateColumns={columns}>
+        <TableContainer className="border border-gray-400/50" gridTemplateColumns={columns}>
             <thead>
                 <tr>
                     {headers.map((header, headerindex) => {
