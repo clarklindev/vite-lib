@@ -1,3 +1,4 @@
 @import 'tailwindcss';
-/* https://tailwindcss.com/docs/dark-mode#toggling-dark-mode-manually */
 @custom-variant dark (&:where(.dark, .dark *));
+
+/* Add any additional global styles here */
