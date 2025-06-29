@@ -4,6 +4,7 @@ import path from 'path';
 import { extname, relative } from 'path';
 import { fileURLToPath } from 'node:url';
 import { glob } from 'glob';
+import tailwindcss from '@tailwindcss/vite';
 import dts from 'vite-plugin-dts';
 import react from '@vitejs/plugin-react';
 import { libInjectCss } from 'vite-plugin-lib-inject-css';
@@ -16,6 +17,7 @@ export default defineConfig({
     },
     plugins: [
         react(),
+        tailwindcss(),
         libInjectCss(),
         dts({
             tsconfigPath: './tsconfig.app.json',
